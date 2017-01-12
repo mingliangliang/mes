@@ -1,0 +1,258 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DEWAV_MES.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 206, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CCZU_MES_V1.0.0"
+FONT 9, "微软雅黑"
+BEGIN
+    ICON            IDI_ICON1,IDC_STATIC,11,14,20,20
+    LTEXT           "CCZU_MES_V1.0.0",IDC_STATIC_CAPTION,40,10,99,8,
+                    SS_NOPREFIX
+    LTEXT           "Create_2016.04.11_明亮",IDC_STATIC,40,21,99,8
+    DEFPUSHBUTTON   "OK",IDOK,145,30,50,14,WS_GROUP
+    LTEXT           "Updata_2016.04.11_明亮",IDC_STATIC,40,33,99,8
+END
+
+IDD_DEWAV_MES_DIALOG DIALOGEX 0, 0, 467, 248
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CCZU_MES_V1.0.0"
+FONT 9, "微软雅黑"
+BEGIN
+    PUSHBUTTON      "       订单设置管理\nSet order management",
+                    IDC_BTN_CREATE,220,13,109,34,BS_CENTER | BS_VCENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "   写IMEI\nWrite IMEI",IDC_BTN_WRITE_IMEI,122,66,109,34,
+                    BS_MULTILINE
+    PUSHBUTTON      "CouplingTest",IDC_BTN_COUPLINGTEST,309,152,109,34,
+                    BS_MULTILINE | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "    检查机身IMEI\nCheck phone IMEI",IDC_BTN_CHECKSI,236,
+                    66,109,34,BS_MULTILINE
+    PUSHBUTTON      "           彩盒包装\nPrinting color box labels",
+                    IDC_BTN_COLORBOX,9,115,109,34,BS_MULTILINE
+    PUSHBUTTON      "        检查彩盒IMEI\nCheck color box IMEI",
+                    IDC_BTN_CHECKS2,121,115,109,34,BS_MULTILINE
+    PUSHBUTTON      "      彩盒称重\nColor box weighing",
+                    IDC_BTN_COLORBOX_WEIGH,233,115,109,34,BS_MULTILINE
+    PUSHBUTTON      "     卡通箱包装\nCarton packaging",IDC_BTN_CARTON,349,
+                    114,109,34,BS_MULTILINE
+    PUSHBUTTON      "    卡通箱称重\nCarton Weighing",IDC_BTN_CARTON_WEIGH,9,
+                    150,109,34,BS_MULTILINE
+    PUSHBUTTON      "     栈板包装\nPallet packaging",IDC_BTN_PALLET,121,150,
+                    109,34,BS_MULTILINE
+    PUSHBUTTON      "        生产数据查询\nProduction data query",
+                    IDC_BTN_QUERY,338,13,109,34,BS_MULTILINE
+    GROUPBOX        "组装生产工序  Assembly production processes",
+                    IDC_STATIC1,3,57,460,49
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,4,4,196,52
+    GROUPBOX        "",IDC_STATIC,204,0,259,56
+    GROUPBOX        "包装生产工序  Packaging production processes",
+                    IDC_STATIC2,3,106,460,81
+    PUSHBUTTON      "    出货检查\nShipment check",IDC_BTN_CHECKORDER,11,200,
+                    109,34,BS_MULTILINE
+    PUSHBUTTON      "          返工管理\nRework management",IDC_BTN_REWORK,
+                    124,200,109,34,BS_MULTILINE
+    PUSHBUTTON      "CleanIMEI",IDC_BTN_CLEANIMEI,283,151,109,34,
+                    BS_MULTILINE | NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "品质管理  Quality management system",IDC_STATIC3,4,189,
+                    460,49
+    PUSHBUTTON      "  二次CheckIMEI\nSecond check IMEI",IDC_BTN_CHECKS3,332,
+                    152,109,34,BS_MULTILINE | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "          组件投入\nComponent production",
+                    IDC_BTN_WRITE_SNSCAN,8,66,109,34,BS_MULTILINE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CCZU_MES Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CCZU_MES\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CCZU_MES.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CCZU_MES 应用程序\0"
+            VALUE "ProductVersion", "0, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_DEWAV_MES_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\DEWAV.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\1.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\2.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\CCZU.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\DEWAV_MES.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 DEWAV_MES(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DEWAV_MES.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
