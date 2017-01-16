@@ -1,0 +1,146 @@
+# Microsoft Developer Studio Generated Dependency File, included by WeighTool.mak
+
+.\Buffer.cpp : \
+	".\Buffer.h"\
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\Config.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\LABEL.CPP : \
+	".\LABEL.H"\
+	".\StdAfx.h"\
+	
+
+.\Login.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\Password.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\MainFrm.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\MySerial.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\MySerial.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\Password.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\Password.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\RSData.cpp : \
+	".\Buffer.h"\
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\RSData.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\Splash.cpp : \
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\StateList.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\WeighTool.cpp : \
+	".\Buffer.h"\
+	".\Config.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\Login.h"\
+	".\MainFrm.h"\
+	".\MySerial.h"\
+	".\RSData.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	".\WeighToolDoc.h"\
+	".\WeighToolView.h"\
+	
+
+.\WeighTool.rc : \
+	".\res\DEWAV LOGON.bmp"\
+	".\res\DEWAV.bmp"\
+	".\res\ERROR.ico"\
+	".\res\ico00001.ico"\
+	".\res\icon5.ico"\
+	".\res\IDB_BITMAPSPLASH.bmp"\
+	".\res\Toolbar.bmp"\
+	".\res\WeighTool.ico"\
+	".\res\WeighTool.rc2"\
+	".\res\WeighToolDoc.ico"\
+	
+
+.\WeighToolDoc.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\Login.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	".\WeighToolDoc.h"\
+	
+
+.\WeighToolView.cpp : \
+	".\Buffer.h"\
+	".\Config.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\Login.h"\
+	".\MySerial.h"\
+	".\Password.h"\
+	".\RSData.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	".\WeighToolDoc.h"\
+	".\WeighToolView.h"\
+	
