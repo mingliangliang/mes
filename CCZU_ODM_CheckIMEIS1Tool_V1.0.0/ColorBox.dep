@@ -1,0 +1,131 @@
+# Microsoft Developer Studio Generated Dependency File, included by ColorBox.mak
+
+.\ColorBox.cpp : \
+	".\android_dl_structure.h"\
+	".\brom.h"\
+	".\ColorBox.h"\
+	".\ColorBoxDoc.h"\
+	".\ColorBoxView.h"\
+	".\config.h"\
+	".\DOWNLOAD.H"\
+	".\external_memory_setting.h"\
+	".\flashtool_handle.h"\
+	".\IniFile.h"\
+	".\interface.h"\
+	".\LABEL.H"\
+	".\MainFrm.h"\
+	".\meta.h"\
+	".\metaapp.h"\
+	".\mtk_mcu.h"\
+	".\mtk_resource.h"\
+	".\mtk_status.h"\
+	".\MySpMeta.h"\
+	".\Password.h"\
+	".\skapi.h"\
+	".\SLA_Challenge.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\ColorBox.rc : \
+	".\res\ColorBox.ico"\
+	".\res\ColorBox.rc2"\
+	".\res\ColorBoxDoc.ico"\
+	".\res\DEWAV LOGON.bmp"\
+	".\res\ERROR.ico"\
+	".\res\ico00001.ico"\
+	".\res\icon5.ico"\
+	".\res\IDB_BITMAPSPLASH.bmp"\
+	".\res\Toolbar.bmp"\
+	
+
+.\ColorBoxDoc.cpp : \
+	".\ColorBox.h"\
+	".\ColorBoxDoc.h"\
+	".\StdAfx.h"\
+	
+
+.\ColorBoxView.cpp : \
+	".\android_dl_structure.h"\
+	".\brom.h"\
+	".\ColorBox.h"\
+	".\ColorBoxDoc.h"\
+	".\ColorBoxView.h"\
+	".\config.h"\
+	".\DOWNLOAD.H"\
+	".\external_memory_setting.h"\
+	".\flashtool_handle.h"\
+	".\IniFile.h"\
+	".\interface.h"\
+	".\LABEL.H"\
+	".\meta.h"\
+	".\metaapp.h"\
+	".\mtk_mcu.h"\
+	".\mtk_resource.h"\
+	".\mtk_status.h"\
+	".\MySpMeta.h"\
+	".\Password.h"\
+	".\skapi.h"\
+	".\SLA_Challenge.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\config.cpp : \
+	".\config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\LABEL.CPP : \
+	".\LABEL.H"\
+	".\StdAfx.h"\
+	
+
+.\MainFrm.cpp : \
+	".\ColorBox.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	
+
+.\MySpMeta.cpp : \
+	".\android_dl_structure.h"\
+	".\ColorBox.h"\
+	".\interface.h"\
+	".\MySpMeta.h"\
+	".\spmeta.h"\
+	".\StdAfx.h"\
+	
+
+.\Password.cpp : \
+	".\ColorBox.h"\
+	".\Password.h"\
+	".\StdAfx.h"\
+	
+
+.\skdlluse.cpp : \
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\Splash.cpp : \
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\StateList.cpp : \
+	".\ColorBox.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
