@@ -51,7 +51,6 @@ public:
 	CString	m_csCurrentProduct;
 	CString	m_csCurrentColor;
 	CString	m_csCurrentOrder;
-	CString	m_csCurrentCount;
 	CStateList	m_state_list;
 	CString	m_csCurrentLine;
 	//}}AFX_DATA
@@ -59,19 +58,6 @@ public:
 // Attributes
 public:
 	CColorBoxDoc* GetDocument();
-
-public://USB_KEY
-	bool OpenKey();
-	bool ReadCount();
-	bool WriteCount();
-	BOOL Test005();//CHECK USB_KEY
-
-public://KEY
-	unsigned short UserID;
-	CString m_csReadCount;
-	CString m_csWriteCount;
-	int m_iReadCount;
-	int m_iWriteCount;
 
 public:
 	void SetMyFont();
@@ -113,6 +99,7 @@ public:
 
 	CString m_csErrorSndPath;    
 	CString m_csOkSndPath;
+	CString m_csCurrentCount;
 
 public:  
 	CString m_imei1_start;

@@ -2,8 +2,8 @@
 //
 // msadox.tlh
 //
-// C++ source equivalent of Win32 type library c:\Program Files\Common Files\system\ado\msadox.dll
-// compiler-generated file created 09/17/15 at 16:57:59 - DO NOT EDIT!
+// C++ source equivalent of type library c:\Program Files\Common Files\system\ado\msadox.dll
+// compiler-generated file created 05/17/16 at 10:18:57 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)

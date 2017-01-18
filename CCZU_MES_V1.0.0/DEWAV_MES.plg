@@ -7,21 +7,21 @@
 </h3>
 <h3>Command Lines</h3>
 Creating command line "rc.exe /l 0x804 /fo"Release/DEWAV_MES.res" /d "NDEBUG" /d "_AFXDLL" "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_MES_V1.0.0\DEWAV_MES.rc"" 
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP81E.tmp" with contents
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP149.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/DEWAV_MES.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_MES_V1.0.0\DEWAV_MES.cpp"
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_MES_V1.0.0\DEWAV_MESDlg.cpp"
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_MES_V1.0.0\MyButton.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP81E.tmp" 
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP81F.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP149.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP14A.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/DEWAV_MES.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_MES_V1.0.0\StdAfx.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP81F.tmp" 
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP820.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP14A.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP14B.tmp" with contents
 [
 SkinMagicTrial.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/CCZU_MES_V1.0.0.pdb" /machine:I386 /out:"D:\CCZU_MES_V1.0.0\CCZU_MES_V1.0.0.exe" 
 ".\Release\DEWAV_MES.obj"
@@ -30,7 +30,7 @@ SkinMagicTrial.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/CCZU
 ".\Release\StdAfx.obj"
 ".\Release\DEWAV_MES.res"
 ]
-Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP820.tmp"
+Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP14B.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...

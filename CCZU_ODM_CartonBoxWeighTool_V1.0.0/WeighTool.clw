@@ -21,13 +21,13 @@ Class9=CWeighToolDoc
 Class10=CWeighToolView
 
 ResourceCount=7
-Resource1=IDD_DLG_PASSWORD
-Resource2=IDD_WEIGHTOOL_FORM
-Resource3=IDD_LOGIN
+Resource1=IDR_MAINFRAME
+Resource2=IDD_LOGIN
+Resource3=IDD_ABOUTBOX
 Resource4=IDR_LIST_CLEAR
-Resource5=IDD_ABOUTBOX
+Resource5=IDD_DLG_PASSWORD
 Class11=CLogin
-Resource6=IDR_MAINFRAME
+Resource6=IDD_WEIGHTOOL_FORM
 Class12=CWeighSetting
 Resource7=IDD_SETTING
 

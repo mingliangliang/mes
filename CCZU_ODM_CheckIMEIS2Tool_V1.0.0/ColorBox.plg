@@ -7,7 +7,7 @@
 </h3>
 <h3>Command Lines</h3>
 Creating command line "rc.exe /l 0x804 /fo"Release/ColorBox.res" /d "NDEBUG" "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\ColorBox.rc"" 
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP88F.tmp" with contents
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP511.tmp" with contents
 [
 /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ColorBox.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\ColorBox.cpp"
@@ -23,14 +23,14 @@ Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP88F.tmp" with 
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\Splash.cpp"
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\StateList.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP88F.tmp" 
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP890.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP511.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP512.tmp" with contents
 [
 /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ColorBox.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\StdAfx.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP890.tmp" 
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP891.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP512.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP513.tmp" with contents
 [
 Adsapi32.lib Version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/CCZU_ODM_CheckIMEIS2Tool.pdb" /machine:I386 /out:"D:\CCZU_MES_V1.0.0\bin\CCZU_ODM_CheckIMEIS2Tool.exe" 
 ".\Release\ColorBox.obj"
@@ -48,7 +48,7 @@ Adsapi32.lib Version.lib /nologo /subsystem:windows /incremental:no /pdb:"Releas
 ".\Release\StdAfx.obj"
 ".\Release\ColorBox.res"
 ]
-Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP891.tmp"
+Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP513.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
@@ -74,7 +74,7 @@ now use sk dynamic lib to link
 StateList.cpp
 Generating Code...
 Linking...
-Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP893.tmp" with contents
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP515.tmp" with contents
 [
 /nologo /o"Release/ColorBox.bsc" 
 ".\Release\StdAfx.sbr"
@@ -90,7 +90,7 @@ Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP893.tmp" with 
 ".\Release\skdlluse.sbr"
 ".\Release\Splash.sbr"
 ".\Release\StateList.sbr"]
-Creating command line "bscmake.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP893.tmp"
+Creating command line "bscmake.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP515.tmp"
 Creating browse info file...
 <h3>Output Window</h3>
 

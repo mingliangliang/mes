@@ -2,8 +2,8 @@
 //
 // msadox.tli
 //
-// Wrapper implementations for Win32 type library c:\Program Files\Common Files\system\ado\msadox.dll
-// compiler-generated file created 10/22/15 at 10:45:26 - DO NOT EDIT!
+// Wrapper implementations for type library c:\Program Files\Common Files\system\ado\msadox.dll
+// compiler-generated file created 05/17/16 at 10:34:14 - DO NOT EDIT!
 
 #pragma once
 
