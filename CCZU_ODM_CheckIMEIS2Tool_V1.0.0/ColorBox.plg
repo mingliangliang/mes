@@ -1,0 +1,103 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ColorBox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ColorBox.res" /d "NDEBUG" "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\ColorBox.rc"" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP88F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ColorBox.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\ColorBox.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\ColorBoxDoc.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\ColorBoxView.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\config.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\IniFile.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\LABEL.CPP"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\Login.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\MainFrm.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\Password.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\skdlluse.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\Splash.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\StateList.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP88F.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP890.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/ColorBox.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CheckIMEIS2Tool_V1.0.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP890.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP891.tmp" with contents
+[
+Adsapi32.lib Version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/CCZU_ODM_CheckIMEIS2Tool.pdb" /machine:I386 /out:"D:\CCZU_MES_V1.0.0\bin\CCZU_ODM_CheckIMEIS2Tool.exe" 
+".\Release\ColorBox.obj"
+".\Release\ColorBoxDoc.obj"
+".\Release\ColorBoxView.obj"
+".\Release\config.obj"
+".\Release\IniFile.obj"
+".\Release\LABEL.OBJ"
+".\Release\Login.obj"
+".\Release\MainFrm.obj"
+".\Release\Password.obj"
+".\Release\skdlluse.obj"
+".\Release\Splash.obj"
+".\Release\StateList.obj"
+".\Release\StdAfx.obj"
+".\Release\ColorBox.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP891.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+f:\lucky\毕业设计\代码\cczu_mes_system_v1.0.0\cczu_odm_checkimeis2tool_v1.0.0\release\msadox.tlh(1203) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+f:\lucky\毕业设计\代码\cczu_mes_system_v1.0.0\cczu_odm_checkimeis2tool_v1.0.0\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+ColorBox.cpp
+ColorBoxDoc.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+ColorBoxView.cpp
+config.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+IniFile.cpp
+LABEL.CPP
+Login.cpp
+MainFrm.cpp
+Password.cpp
+skdlluse.cpp
+Splash.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+now use sk dynamic lib to link
+StateList.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP893.tmp" with contents
+[
+/nologo /o"Release/ColorBox.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\ColorBox.sbr"
+".\Release\ColorBoxDoc.sbr"
+".\Release\ColorBoxView.sbr"
+".\Release\config.sbr"
+".\Release\IniFile.sbr"
+".\Release\LABEL.SBR"
+".\Release\Login.sbr"
+".\Release\MainFrm.sbr"
+".\Release\Password.sbr"
+".\Release\skdlluse.sbr"
+".\Release\Splash.sbr"
+".\Release\StateList.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP893.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CCZU_ODM_CheckIMEIS2Tool.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

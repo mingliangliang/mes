@@ -1,0 +1,96 @@
+# Microsoft Developer Studio Generated Dependency File, included by ColorBox.mak
+
+.\ColorBox.cpp : \
+	".\ColorBox.h"\
+	".\ColorBoxDoc.h"\
+	".\ColorBoxView.h"\
+	".\config.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\MainFrm.h"\
+	".\Password.h"\
+	".\skapi.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\ColorBox.rc : \
+	".\res\ColorBox.ico"\
+	".\res\ColorBox.rc2"\
+	".\res\ColorBoxDoc.ico"\
+	".\res\DEWAV LOGON.bmp"\
+	".\res\ERROR.ico"\
+	".\res\ico00001.ico"\
+	".\res\icon5.ico"\
+	".\res\IDB_BITMAPSPLASH.bmp"\
+	".\res\Toolbar.bmp"\
+	
+
+.\ColorBoxDoc.cpp : \
+	".\ColorBox.h"\
+	".\ColorBoxDoc.h"\
+	".\StdAfx.h"\
+	
+
+.\ColorBoxView.cpp : \
+	".\ColorBox.h"\
+	".\ColorBoxDoc.h"\
+	".\ColorBoxView.h"\
+	".\config.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\Password.h"\
+	".\skapi.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\config.cpp : \
+	".\config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\LABEL.CPP : \
+	".\LABEL.H"\
+	".\StdAfx.h"\
+	
+
+.\MainFrm.cpp : \
+	".\ColorBox.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	
+
+.\Password.cpp : \
+	".\ColorBox.h"\
+	".\Password.h"\
+	".\StdAfx.h"\
+	
+
+.\skdlluse.cpp : \
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\Splash.cpp : \
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\StateList.cpp : \
+	".\ColorBox.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
