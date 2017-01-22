@@ -1,0 +1,114 @@
+# Microsoft Developer Studio Generated Dependency File, included by WeighTool.mak
+
+.\Buffer.cpp : \
+	".\Buffer.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\Config.cpp : \
+	".\Config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\LABEL.CPP : \
+	".\LABEL.H"\
+	".\StdAfx.h"\
+	
+
+.\MainFrm.cpp : \
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\MySerial.cpp : \
+	".\MySerial.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\Password.cpp : \
+	".\Password.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\RSData.cpp : \
+	".\Buffer.h"\
+	".\RSData.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+	
+.\Splash.cpp : \
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\StateList.cpp : \
+	".\StateList.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\WeighTool.cpp : \
+	".\Buffer.h"\
+	".\Config.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\MainFrm.h"\
+	".\MySerial.h"\
+	".\RSData.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	".\WeighToolDoc.h"\
+	".\WeighToolView.h"\
+	
+
+.\WeighTool.rc : \
+	".\res\DEWAV LOGON.bmp"\
+	".\res\DEWAV.bmp"\
+	".\res\ERROR.ico"\
+	".\res\ico00001.ico"\
+	".\res\icon5.ico"\
+	".\res\IDB_BITMAPSPLASH.bmp"\
+	".\res\Toolbar.bmp"\
+	".\res\WeighTool.ico"\
+	".\res\WeighTool.rc2"\
+	".\res\WeighToolDoc.ico"\
+	
+
+.\WeighToolDoc.cpp : \
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	".\WeighToolDoc.h"\
+	
+
+.\WeighToolView.cpp : \
+	".\Buffer.h"\
+	".\Config.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\MySerial.h"\
+	".\Password.h"\
+	".\RSData.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	".\WeighTool.h"\
+	".\WeighToolDoc.h"\
+	".\WeighToolView.h"\
+	
