@@ -1,0 +1,646 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CreateProduct.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CreateProduct.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CCZU_ODM_CreateProductTool_V1.0.0"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CCZU_ODM_CreateProductTool_V1.0.0",IDC_STATIC,40,10,141,
+                    8,SS_NOPREFIX
+    LTEXT           "Create By:明亮_2016-04-12",IDC_STATIC,40,25,125,8
+    DEFPUSHBUTTON   "OK",IDOK,182,40,50,23,WS_GROUP
+    LTEXT           "Last Update: 2016-04-12_明亮",IDC_STATIC,40,42,125,8
+END
+
+IDD_CREATEPRODUCT_DIALOG DIALOGEX 0, 0, 499, 428
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Order Create"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_PLANNEDOUTPUT,65,50,44,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Detect",IDC_BTN_CHECK_PROJECT_NAME,306,18,49,45
+    CONTROL         "1 IMEI",IDC_RADIO_IMEITYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,85,35,10
+    CONTROL         "2 IMEI",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,13,100,
+                    35,10
+    CONTROL         "3 IMEI",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,51,85,35,
+                    10
+    CONTROL         "4 IMEI",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,51,100,
+                    35,10
+    COMBOBOX        IDC_COMBO_IMEIRANGE,13,132,74,58,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SRT_IMEI1,154,80,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_IMEI1,154,92,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SRT_IMEI2,154,105,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_IMEI2,154,117,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SRT_IMEI3,291,80,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_IMEI3,291,92,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SRT_IMEI4,291,105,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_IMEI4,291,117,76,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "...",IDC_BTN_IMEI_OPEN,278,135,19,11
+    DEFPUSHBUTTON   "Detect",IDC_BTN_CHECK_IMEI,320,132,43,17
+    DEFPUSHBUTTON   "Detect",IDC_BTN_SETTING,455,232,34,60
+    PUSHBUTTON      "...",IDC_BTN_COLOR_OPEN,208,319,19,11
+    PUSHBUTTON      "...",IDC_BTN_PACK_OPEN,208,346,19,11
+    PUSHBUTTON      "...",IDC_BTN_PACK_OPEN_SUB,208,361,19,11
+    PUSHBUTTON      "...",IDC_BTN_PALLET_OPEN,208,375,19,11
+    PUSHBUTTON      "...",IDC_BTN_PALLET_OPEN_SUB,208,388,19,11
+    DEFPUSHBUTTON   "Detection",IDC_BTN_RESOURCE_CHECK,231,342,40,48
+    EDITTEXT        IDC_EDIT_CARTON_NAME_STATIC,437,22,51,12,ES_AUTOHSCROLL
+    CONTROL         "Set serial number range",IDC_CHECK_CARTONRANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,373,41,111,10
+    EDITTEXT        IDC_EDIT_STR_CARTON,437,56,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_END_CARTON,437,72,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CARTON_NAME_LENGTH,437,92,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_COUNT,437,107,51,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Detect",IDC_BTN_CARTON_NAME_LENGTH_CHECK,401,125,68,26
+    EDITTEXT        IDC_EDIT_PALLET_NAME_STATIC,337,317,53,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PALLET_NAME_LENGTH,372,336,53,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PALLET_MAX_COUNT,430,317,53,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Detection",IDC_BTN_PALLET_NAME_LENGTH_CHECK,431,331,52,
+                    21
+    EDITTEXT        IDC_EDIT_COLOR,259,49,43,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create Product",IDC_BTN_CREATE,279,359,211,55
+    EDITTEXT        IDC_EDIT_IMEI_PATH,167,134,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Step1 Production && Order",IDC_STATIC,7,3,362,64
+    GROUPBOX        "Step2 IMEI",IDC_STATIC,7,72,362,81
+    LTEXT           "SRT_IMEI1_VAL",IDC_STATIC,97,81,55,8
+    LTEXT           "END_IMEI1_VAL",IDC_STATIC,97,94,54,8
+    LTEXT           "SRT_IMEI2_VAL",IDC_STATIC,97,107,53,8
+    LTEXT           "END_IMEI2_VAL",IDC_STATIC,97,120,53,8
+    LTEXT           "SRT_IMEI3_VAL",IDC_STATIC,234,81,52,8
+    LTEXT           "END_IMEI3_VAL",IDC_STATIC,234,94,52,8
+    LTEXT           "SRT_IMEI4_VAL",IDC_STATIC,234,107,53,8
+    LTEXT           "END_IMEI4_VAL",IDC_STATIC,234,120,52,8
+    GROUPBOX        "Step4 TestTool Function Setting",IDC_STATIC,7,159,485,
+                    142
+    GROUPBOX        "Step5 Print Script Setting",IDC_STATIC,7,306,269,109
+    LTEXT           "ColorBox script",IDC_STATIC,9,322,77,8
+    LTEXT           "CartonBox script",IDC_STATIC,9,349,77,10
+    EDITTEXT        IDC_EDIT_COLOR_PATH,86,319,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PACK_PATH,86,346,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Step3 Carton Setting",IDC_STATIC,370,3,122,150
+    RTEXT           "Serial number length",IDC_STATIC,373,88,53,18
+    RTEXT           "Maximum",IDC_STATIC,373,110,53,10
+    RTEXT           "Product:",IDC_STATIC,11,19,45,8
+    RTEXT           "Order:",IDC_STATIC,11,33,45,8
+    RTEXT           "Check static",IDC_STATIC,373,23,53,10
+    RTEXT           "Color",IDC_STATIC,203,51,53,10
+    LTEXT           "CartonBox sub",IDC_STATIC,9,363,77,10
+    EDITTEXT        IDC_EDIT_PACK_PATH_SUB,86,360,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Step6 Pallet Setting",IDC_STATIC,279,303,213,52
+    LTEXT           "Serial number length",IDC_STATIC,281,336,82,13
+    LTEXT           "Maximum",IDC_STATIC,398,319,28,10
+    LTEXT           "Check static",IDC_STATIC,282,319,53,10
+    LTEXT           "Pallet script",IDC_STATIC,9,377,77,10
+    EDITTEXT        IDC_EDIT_PALLET_PATH,86,374,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Plan output:",IDC_STATIC,12,52,49,8
+    EDITTEXT        IDC_EDIT_PALLET_PATH_SUB,86,387,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Pallet script sub",IDC_STATIC,9,391,77,10
+    RTEXT           "Carton begin",IDC_STATIC,373,57,53,10
+    RTEXT           "Carton end",IDC_STATIC,373,73,53,10
+    LTEXT           "IMEI RANGE",IDC_STATIC,12,116,78,8
+    GROUPBOX        "",IDC_STATIC,9,79,82,70
+    LTEXT           "Excel path",IDC_STATIC,96,136,62,10
+    PUSHBUTTON      "...",IDC_BTN_COLOR_OPEN_SUB,208,333,19,11
+    LTEXT           "ColorBox script sub",IDC_STATIC,9,336,77,8
+    EDITTEXT        IDC_EDIT_COLOR_PATH_SUB,86,333,111,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Customer type",IDC_STATIC,203,18,53,8
+    EDITTEXT        IDC_EDIT_CUSTOMER,259,16,43,12,ES_AUTOHSCROLL
+    RTEXT           "Internal type",IDC_STATIC,203,34,53,8
+    EDITTEXT        IDC_EDIT_SNSTATIC,259,31,43,12,ES_AUTOHSCROLL
+    CONTROL         "Scan PSN",IDC_CHECK_SCANPSN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,250,176,44,10
+    EDITTEXT        IDC_EDIT_PSN_LENGTH,440,174,43,14,ES_AUTOHSCROLL
+    CONTROL         "PSN check static",IDC_CHECK_PSNCHK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,250,192,81,10
+    EDITTEXT        IDC_EDIT_PSN_CHK,334,190,105,14,ES_AUTOHSCROLL
+    GROUPBOX        "PSN&&Net code",IDC_STATIC,239,165,252,60
+    LTEXT           "SN length",IDC_STATIC,399,177,38,10
+    CONTROL         "Scan net code",IDC_CHECK_SCANNETCODE2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,250,208,64,10
+    EDITTEXT        IDC_EDIT_NET_LENGTH2,360,206,43,14,ES_AUTOHSCROLL
+    LTEXT           "Length",IDC_STATIC,323,208,29,10
+    EDITTEXT        IDC_EDIT_NET_HEADER2,440,206,43,14,ES_AUTOHSCROLL
+    LTEXT           "Header",IDC_STATIC,408,208,28,10
+    CONTROL         "PSN write to phone",IDC_CHECK_WRITETOPHONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,299,176,83,10
+    GROUPBOX        "Platform",IDC_STATIC,14,170,216,59
+    EDITTEXT        IDC_EDIT_DBPATH,18,193,147,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_APDBPATH,18,210,147,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "Modem Database",IDC_BTN_SELECT,168,193,58,14,
+                    WS_DISABLED
+    PUSHBUTTON      "AP    Database",IDC_BTN_SELECTAP,168,209,58,14,
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_COLOR_LOW_WEIGH,85,259,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COLOR_HIGH_WEIGH,149,259,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CARTON_LOW_WEIGH,85,273,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CARTON_HIGH_WEIGH,149,273,41,14,ES_AUTOHSCROLL
+    LTEXT           "ColorBox weight range",IDC_STATIC,22,250,51,15
+    LTEXT           "~",IDC_STATIC,137,265,8,8
+    LTEXT           "Max",IDC_STATIC,159,245,26,10
+    LTEXT           "Min",IDC_STATIC,93,245,26,9
+    LTEXT           "CartonBox weight range",IDC_STATIC,23,272,52,15
+    LTEXT           "~",IDC_STATIC,137,277,8,8
+    GROUPBOX        "Weight Range Setting",IDC_STATIC,13,233,218,60
+    CONTROL         "Cali/FT",IDC_CHECK_BTFT2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,244,276,44,10
+    CONTROL         "Reset",IDC_CHECK_RESET_FACTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,302,275,35,10
+    CONTROL         "Check AP Version",IDC_CHECK_VERSION3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,244,242,92,10
+    EDITTEXT        IDC_EDIT_VERSION2,340,240,111,14,ES_AUTOHSCROLL
+    CONTROL         "Check MainBoard type",IDC_CHECK_BOARD_VERSION3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,244,259,92,10
+    EDITTEXT        IDC_EDIT_BOARD_VERSION2,340,255,111,14,ES_AUTOHSCROLL
+    GROUPBOX        "Write IMEI && CheckNV Setting",IDC_STATIC,238,227,216,
+                    66
+    CONTROL         "MediaTek",IDC_RADIO_PLAT_SP,"Button",BS_AUTORADIOBUTTON,
+                    52,179,48,10
+    CONTROL         "Spreadtrum",IDC_RADIO_PLAT_SPRD,"Button",
+                    BS_AUTORADIOBUTTON,115,179,56,10
+    COMBOBOX        IDC_COMBO_PRODUCTNAME,57,19,140,530,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ORDERNAME,57,33,140,528,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_PASSWORD DIALOG DISCARDABLE  0, 0, 147, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,51,21,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,51,47,78,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,13,77,50,22
+    PUSHBUTTON      "Cancel",IDCANCEL,82,77,50,22
+    LTEXT           "User",IDC_STATIC,22,23,17,8
+    LTEXT           "Password",IDC_STATIC,15,50,33,8
+END
+
+IDD_ORDERRELEASE DIALOG DISCARDABLE  0, 0, 411, 346
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_VSCROLL | WS_SYSMENU
+CAPTION "DEWAV ODM MES System——Compare &&Release Order"
+FONT 10, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO_PRODUCTION,255,10,140,530,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ORDER,255,24,140,528,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Release Order",IDOK,230,309,60,28
+    PUSHBUTTON      "Cancel",IDCANCEL,310,309,60,28
+    CONTROL         "MediaTek",IDC_RADIO_PLAT_SP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,247,52,48,10
+    CONTROL         "Spreadtrum",IDC_RADIO_PLAT_SPRD1,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,312,52,56,10
+    GROUPBOX        "Select",IDC_STATIC,205,3,195,37
+    RTEXT           "Product:",IDC_STATIC,210,13,39,8
+    RTEXT           "Order:",IDC_STATIC,210,26,39,8
+    LTEXT           "IMEI Type",IDC_STATIC,11,40,37,8
+    LTEXT           "IMEI Range Setting Type",IDC_STATIC,11,53,56,16
+    LTEXT           "IMEI1_STR IMEI1_END",IDC_STATIC,11,77,37,17
+    GROUPBOX        "Basic Setting",IDC_STATIC,7,3,195,335
+    LTEXT           "IMEI2_STR",IDC_STATIC,11,103,37,8
+    LTEXT           "IMEI2_END",IDC_STATIC,11,118,37,8
+    LTEXT           "IMEI3_STR",IDC_STATIC,11,133,37,8
+    LTEXT           "IMEI3_END",IDC_STATIC,11,148,37,8
+    LTEXT           "IMEI4_STR IMEI4_END",IDC_STATIC,11,165,41,20
+    LTEXT           "CartonBox check static",IDC_STATIC,11,193,89,8
+    LTEXT           "Carton serial number length",IDC_STATIC,11,208,109,8
+    LTEXT           "Carton serial number begin",IDC_STATIC,11,223,105,8
+    LTEXT           "Carton serial number end",IDC_STATIC,11,238,97,8
+    LTEXT           "Carton maximum",IDC_STATIC,11,253,57,8
+    LTEXT           "Pallet check static",IDC_STATIC,11,268,77,8
+    LTEXT           "Pallet serial number length",IDC_STATIC,11,283,109,8
+    LTEXT           "Pallet maximum",IDC_STATIC,11,298,57,8
+    LTEXT           "Plan output",IDC_STATIC,11,313,45,8
+    LTEXT           "Color",IDC_STATIC,11,326,21,8
+    LTEXT           "static",IDC_STATIC_IMEITYPE,76,40,90,8
+    LTEXT           "static",IDC_STATIC_IMEIRANGETYPE,76,57,90,8
+    LTEXT           "static",IDC_STATIC_IMEI1STR,76,73,90,8
+    LTEXT           "static",IDC_STATIC_IMEI1END,76,88,90,8
+    LTEXT           "static",IDC_STATIC_IMEI2STR,76,103,90,8
+    LTEXT           "static",IDC_STATIC_IMEI2END,76,118,90,8
+    LTEXT           "static",IDC_STATIC_IMEI3STR,76,133,90,8
+    LTEXT           "static",IDC_STATIC_IMEI3END,76,148,90,8
+    LTEXT           "static",IDC_STATIC_IMEI4STR,76,163,90,8
+    LTEXT           "static",IDC_STATIC_IMEI4END,76,178,90,8
+    LTEXT           "static",IDC_STATIC_CARTONSTATIC,122,193,79,8
+    LTEXT           "static",IDC_STATIC_CARTONLENTH,122,208,69,8
+    LTEXT           "static",IDC_STATIC_CARTONBEGIN,122,223,61,8
+    LTEXT           "static",IDC_STATIC_CARTONEND,123,238,70,8
+    LTEXT           "static",IDC_STATIC_CARTONMAXCOUNT,104,253,90,8
+    LTEXT           "static",IDC_STATIC_PALLETSTATIC,103,268,90,8
+    LTEXT           "static",IDC_STATIC_PALLETLENTH,128,283,60,8
+    LTEXT           "static",IDC_STATIC_PALLETMAXCOUNT,77,298,90,8
+    LTEXT           "static",IDC_STATIC_PLANOUTPUT,76,313,90,8
+    LTEXT           "static",IDC_STATIC_COLOR,76,326,90,8
+    GROUPBOX        "Check NV Setting",IDC_STATIC,205,74,195,74
+    GROUPBOX        "Platform",IDC_STATIC,205,42,195,26
+    CONTROL         "Cali/FT",IDC_CHECK_BTFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,210,129,44,10
+    CONTROL         "Reset",IDC_CHECK_RESET_FACTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,274,129,64,10
+    CONTROL         "Check AP Version ",IDC_CHECK_VERSION,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,211,102,92,10
+    CONTROL         "Check MainBoard version",IDC_CHECK_BOARD_VERSION,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,211,89,105,10
+    LTEXT           "static",IDC_STATIC_VERSION,215,117,178,10
+    LTEXT           "static",IDC_STATIC_BOARD_VERSION,324,88,68,10
+    GROUPBOX        "Weight Range Setting",IDC_STATIC,205,236,196,61
+    LTEXT           "ColorBox weight",IDC_STATIC,214,251,37,17
+    LTEXT           "~       ~",IDC_STATIC,326,254,8,36
+    LTEXT           "CartonBox weight ",IDC_STATIC,215,274,31,18
+    LTEXT           "static",IDC_STATIC_COLOR_LOW_WEIGH,264,254,49,10
+    LTEXT           "static",IDC_STATIC_COLOR_HIGH_WEIGH,340,254,49,10
+    LTEXT           "static",IDC_STATIC_CARTON_LOW_WEIGH,264,278,49,10
+    LTEXT           "static",IDC_STATIC_CARTON_HIGH_WEIGH,340,278,49,10
+    LTEXT           "Customer type",IDC_STATIC,11,26,53,8
+    LTEXT           "static",IDC_STATIC_CUSTOMER,76,26,90,8
+    LTEXT           "Internal type",IDC_STATIC,11,13,54,8
+    LTEXT           "static",IDC_STATIC_SNSTATIC,76,13,90,8
+    GROUPBOX        "PSN&&Net code",IDC_STATIC,204,152,196,81
+    CONTROL         "Scan PSN",IDC_CHECK_SCANPSN,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,216,163,65,10
+    CONTROL         "PSN check static",IDC_CHECK_PSNCHK,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,216,189,80,10
+    LTEXT           "PSN length",IDC_STATIC,291,164,47,10
+    LTEXT           "static",IDC_STATIC_PSN_LENGTH,346,164,45,10
+    CONTROL         "Scan net code",IDC_CHECK_SCANNET,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,216,204,68,10
+    LTEXT           "Net code length",IDC_STATIC,289,217,67,10
+    LTEXT           "static",IDC_STATIC_NET_LENGTH2,361,217,37,10
+    LTEXT           "Net code header",IDC_STATIC,289,206,65,10
+    LTEXT           "static",IDC_STATIC_NET_HEADER2,361,206,35,10
+    CONTROL         "PSN write to phone",IDC_CHECK_WRITETOPHONE,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,216,176,108,
+                    10
+    LTEXT           "Static",IDC_STATIC_PSN_CHK2,311,190,82,8
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 178, 202
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DEWAV ODM MES System——Create Order Tool"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Create Order",IDC_CREATE,35,64,108,41,BS_FLAT
+    PUSHBUTTON      "Compare &&Release Order",IDC_RELEASE,35,106,108,41,
+                    BS_FLAT
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,7,7,164,53
+    PUSHBUTTON      "Modify Order Setting",IDC_ALTERSETTING,35,148,108,41,
+                    BS_FLAT
+END
+
+IDD_ALTERSETTING DIALOG DISCARDABLE  0, 0, 531, 254
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_VSCROLL | WS_SYSMENU
+CAPTION "Order Setting"
+FONT 10, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBOPRODUCT,52,13,192,307,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOORDER,52,28,192,424,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "MediaTek",IDC_RADIOPLAT_SP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,69,53,48,10
+    CONTROL         "Spreadtrum",IDC_RADIOPLAT_SPRD,"Button",
+                    BS_AUTORADIOBUTTON,142,53,56,10
+    DEFPUSHBUTTON   "OK",IDOK,56,217,50,25
+    PUSHBUTTON      "CANCEL",IDCANCEL,165,217,50,25
+    GROUPBOX        "Product Order Select",IDC_STATIC,9,3,250,41
+    RTEXT           "Product",IDC_STATIC,10,15,39,8
+    RTEXT           "Order",IDC_STATIC,10,29,39,8
+    GROUPBOX        "Platform",IDC_STATIC,9,45,250,20
+    GROUPBOX        "Write IMEI && CheckNV Setting",IDC_STATIC,264,176,250,
+                    66
+    CONTROL         "Cali&&FT",IDC_CHECKBTFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,269,224,44,10
+    CONTROL         "Reset",IDC_CHECKRESET_FACTORY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,332,224,73,10
+    CONTROL         "Check AP Version",IDC_CHECKVERSION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,269,189,92,10
+    CONTROL         "Check MainBoard Version",IDC_CHECKBOARD_VERSION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,269,204,107,10
+    EDITTEXT        IDC_EDITVERSION,382,188,129,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITBOARD_VERSION,382,202,129,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "ColorBox Weight",IDC_STATIC,285,142,61,8
+    LTEXT           "Carton Weight",IDC_STATIC,285,159,61,8
+    GROUPBOX        "Weight Range Setting",IDC_STATIC,264,118,250,57
+    LTEXT           "Min",IDC_STATIC,373,126,24,8
+    LTEXT           "Max",IDC_STATIC,452,126,24,8
+    EDITTEXT        IDC_EDITCOLOR_LOW_WEIGH,359,139,49,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCOLOR_HIGH_WEIGH,439,139,49,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCARTON_LOW_WEIGH,359,156,49,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCARTON_HIGH_WEIGH,439,156,49,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "~",IDC_STATIC,421,144,11,8
+    LTEXT           "~",IDC_STATIC,421,159,11,8
+    GROUPBOX        "Print",IDC_STATIC,264,3,250,110
+    LTEXT           "ColorBox script",IDC_STATIC,270,17,77,8
+    EDITTEXT        IDC_EDIT_COLOR_PATH2,349,14,134,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BTN_COLOR_OPEN2,486,14,26,14
+    LTEXT           "CartonBox script",IDC_STATIC,270,48,65,8
+    EDITTEXT        IDC_EDIT_PACK_PATH2,349,45,134,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BTN_PACK_OPEN2,486,45,26,14
+    LTEXT           "CartonBox sub",IDC_STATIC,269,63,75,8
+    EDITTEXT        IDC_EDIT_PACK_PATH_SUB2,349,61,134,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BTN_PACK_OPEN_SUB2,486,61,26,14
+    LTEXT           "Pallet script",IDC_STATIC,270,79,66,8
+    EDITTEXT        IDC_EDIT_PALLET_PATH2,349,77,134,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BTN_PALLET_OPEN2,486,77,26,14
+    LTEXT           "Pallet script sub",IDC_STATIC,269,95,79,8
+    EDITTEXT        IDC_EDIT_PALLET_PATH_SUB2,349,93,134,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BTN_PALLET_OPEN_SUB2,486,93,26,14
+    GROUPBOX        "CartonBox",IDC_STATIC,9,139,250,34
+    LTEXT           "CartonBox static",IDC_STATIC,12,150,40,17
+    EDITTEXT        IDC_EDIT_CARTON_NAME_STATIC2,56,151,44,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "serial number length",IDC_STATIC,109,149,55,19
+    EDITTEXT        IDC_EDIT_CARTON_NAME_LENGTH2,171,151,28,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Max",IDC_STATIC,207,153,14,12
+    EDITTEXT        IDC_EDIT_MAX_COUNT2,228,151,28,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Pallet",IDC_STATIC,9,177,250,32
+    LTEXT           "Pallet static",IDC_STATIC,13,187,37,17
+    EDITTEXT        IDC_EDIT_PALLET_NAME_STATIC2,56,187,44,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "serial number length",IDC_STATIC,106,185,55,19
+    EDITTEXT        IDC_EDIT_PALLET_NAME_LENGTH2,171,187,28,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Max",IDC_STATIC,206,189,17,14
+    EDITTEXT        IDC_EDIT_PALLET_MAX_COUNT2,228,187,28,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "ColorBox script sub",IDC_STATIC,270,31,76,8
+    EDITTEXT        IDC_EDIT_COLOR_PATH_SUB2,349,29,134,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "...",IDC_BTN_COLOR_OPEN_SUB2,486,29,26,14
+    GROUPBOX        "PSN && Net code",IDC_STATIC,9,66,250,71
+    CONTROL         "Scan PSN",IDC_CHECKSCANPSN2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,76,66,10
+    CONTROL         "Scan net code",IDC_CHECKSCANNETCODE2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,102,68,10
+    LTEXT           "SN length",IDC_STATIC,90,76,38,8
+    LTEXT           "Net code length",IDC_STATIC,88,103,64,8
+    EDITTEXT        IDC_EDITPSN_LENGTH2,134,73,42,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITNET_LENGTH2,155,102,72,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "PSN check static",IDC_CHECKPSNCHK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,109,89,76,10
+    LTEXT           "Net code header",IDC_STATIC,88,122,63,8
+    EDITTEXT        IDC_EDITPSN_CHK2,190,87,66,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITNET_HEADER2,155,119,72,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "PSN write to phone",IDC_CHECKWRITETOPHONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,88,88,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CreateProduct Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CreateProduct\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CreateProduct.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CreateProduct 应用程序\0"
+            VALUE "ProductVersion", "0, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_CREATEPRODUCT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 421
+    END
+
+    IDD_DLG_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_ORDERRELEASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_ALTERSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 247
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\IDB_BITMAPSPLASH.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\DEWAV.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\CCZU.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CreateProduct(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CreateProduct.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

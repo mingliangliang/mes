@@ -1,0 +1,130 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CreateProduct - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/CreateProduct.res" /d "NDEBUG" "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProduct.rc"" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8C7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/CreateProduct.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\AlterSetting.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\config.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProduct.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProductDlg.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\excel.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\font.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\IniFile.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\Main.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\msflexgrid.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\Password.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\picture.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\rowcursor.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\skdlluse.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\Splash.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8C7.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8C8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/CreateProduct.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8C8.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8C9.tmp" with contents
+[
+Adsapi32.lib Version.lib SkinMagicTrial.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/CCZU_ODM_CreateProductTool.pdb" /machine:I386 /out:"D:\CCZU_MES_V1.0.0\bin\CCZU_ODM_CreateProductTool.exe" 
+".\Release\AlterSetting.obj"
+".\Release\config.obj"
+".\Release\CreateProduct.obj"
+".\Release\CreateProductDlg.obj"
+".\Release\excel.obj"
+".\Release\font.obj"
+".\Release\IniFile.obj"
+".\Release\Main.obj"
+".\Release\msflexgrid.obj"
+".\Release\OrderRelease.obj"
+".\Release\Password.obj"
+".\Release\picture.obj"
+".\Release\rowcursor.obj"
+".\Release\skdlluse.obj"
+".\Release\Splash.obj"
+".\Release\StdAfx.obj"
+".\Release\CreateProduct.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8C9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+f:\lucky\毕业设计\代码\cczu_mes_system_v1.0.0\cczu_odm_createproducttool_v1.0.0\release\msadox.tlh(1203) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+f:\lucky\毕业设计\代码\cczu_mes_system_v1.0.0\cczu_odm_createproducttool_v1.0.0\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+AlterSetting.cpp
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\AlterSetting.cpp(286) : warning C4101: 'itemp' : unreferenced local variable
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\AlterSetting.cpp(487) : warning C4101: 'itemp2' : unreferenced local variable
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\AlterSetting.cpp(487) : warning C4101: 'itemp1' : unreferenced local variable
+config.cpp
+CreateProduct.cpp
+CreateProductDlg.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProductDlg.cpp(1074) : warning C4101: 'hInstance' : unreferenced local variable
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProductDlg.cpp(1075) : warning C4101: 'iRet' : unreferenced local variable
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProductDlg.cpp(1565) : warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\CreateProductDlg.cpp(1597) : warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+excel.cpp
+font.cpp
+IniFile.cpp
+Main.cpp
+msflexgrid.cpp
+OrderRelease.cpp
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(460) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(464) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(468) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(472) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(304) : warning C4101: 'x' : unreferenced local variable
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(304) : warning C4101: 'y' : unreferenced local variable
+F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_CreateProductTool_V1.0.0\OrderRelease.cpp(303) : warning C4101: 'itemp' : unreferenced local variable
+Password.cpp
+picture.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+rowcursor.cpp
+skdlluse.cpp
+Splash.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+now use sk dynamic lib to link
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8CB.tmp" with contents
+[
+/nologo /o"Release/CreateProduct.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\AlterSetting.sbr"
+".\Release\config.sbr"
+".\Release\CreateProduct.sbr"
+".\Release\CreateProductDlg.sbr"
+".\Release\excel.sbr"
+".\Release\font.sbr"
+".\Release\IniFile.sbr"
+".\Release\Main.sbr"
+".\Release\msflexgrid.sbr"
+".\Release\OrderRelease.sbr"
+".\Release\Password.sbr"
+".\Release\picture.sbr"
+".\Release\rowcursor.sbr"
+".\Release\skdlluse.sbr"
+".\Release\Splash.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8CB.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CCZU_ODM_CreateProductTool.exe - 0 error(s), 16 warning(s)
+</pre>
+</body>
+</html>

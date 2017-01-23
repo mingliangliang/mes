@@ -1,0 +1,44 @@
+# Microsoft Developer Studio Generated Dependency File, included by CreateProduct.mak
+
+.\config.cpp : \
+	".\config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\CreateProduct.cpp : \
+	".\config.h"\
+	".\CreateProduct.h"\
+	".\CreateProductDlg.h"\
+	".\IniFile.h"\
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\CreateProduct.rc : \
+	".\res\CreateProduct.ico"\
+	".\res\CreateProduct.rc2"\
+	
+
+.\CreateProductDlg.cpp : \
+	".\config.h"\
+	".\CreateProduct.h"\
+	".\CreateProductDlg.h"\
+	".\IniFile.h"\
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\skdlluse.cpp : \
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
