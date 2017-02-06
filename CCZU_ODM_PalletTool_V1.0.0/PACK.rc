@@ -1,0 +1,672 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PACK.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PACK.ico"
+IDR_PACKTYPE            ICON    DISCARDABLE     "res\\PACKDoc.ico"
+IDI_ERRORS              ICON    DISCARDABLE     "res\\ERROR.ico"
+IDI_PASS                ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_STOP                ICON    DISCARDABLE     "res\\icon5.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\EXPORT.ICO"
+IDI_ICON2               ICON    DISCARDABLE     "res\\box.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\discard.ICO"
+IDI_ICON4               ICON    DISCARDABLE     "res\\PRINT004.ICO"
+IDI_ICON5               ICON    DISCARDABLE     "res\\PRINT012.ICO"
+IDI_ICON6               ICON    DISCARDABLE     "res\\Setting.ico"
+IDI_ICON7               ICON    DISCARDABLE     "res\\check.ico"
+IDI_ICON8               ICON    DISCARDABLE     "res\\clear.ico"
+IDI_ICON9               ICON    DISCARDABLE     "res\\delete.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAPSPLASH        BITMAP  DISCARDABLE     "res\\IDB_BITMAPSPLASH.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\DEWAV LOGON.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "Tool(&T)",                    ID_VIEW_TOOLBAR
+        MENUITEM "Status(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "About CCZU_ODM_PalletTool_V1.0.0(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_LIST_CLEAR MENU DISCARDABLE 
+BEGIN
+    POPUP "Clear"
+    BEGIN
+        MENUITEM "Clear List",                  IDM_LIST_CLEAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 223, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CCZU_ODM_PalletTool_V1.0.0"
+FONT 9, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,28,20,20
+    LTEXT           "CCZU_ODM_PalletTool_V1.0.0",IDC_STATIC,41,18,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Create by:明亮_2016-04-18",IDC_STATIC,41,33,119,8
+    DEFPUSHBUTTON   "OK",IDOK,165,43,51,25,WS_GROUP
+    LTEXT           "Last Update:2016-04-18_明亮",IDC_STATIC,41,49,119,8
+END
+
+IDD_PACK_FORM DIALOG DISCARDABLE  0, 0, 428, 404
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_FLEX,"{6262D3A0-531B-11CF-91F6-C2863C385E30}",
+                    WS_TABSTOP,7,50,277,207
+    CONTROL         "List1",IDC_LIST_STATE,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,259,276,131
+    GROUPBOX        "Order information",IDC_STATIC,7,7,277,40
+    LTEXT           "",IDC_STATIC_CURRENT_PRODUCT,50,18,75,11,SS_CENTERIMAGE
+    GROUPBOX        "Carton Number",IDC_STATIC,288,57,127,33
+    EDITTEXT        IDC_EDIT_CARTON,294,68,114,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    GROUPBOX        "",IDC_STATIC,287,90,134,272
+    PUSHBUTTON      "特定栈板号",IDC_BTN_ESPE_BOX,289,98,129,36
+    PUSHBUTTON      "未满封栈板",IDC_BTN_CLOSE,289,135,129,36
+    PUSHBUTTON      "报废栈板号",IDC_BTN_DISCARD,289,172,129,36
+    PUSHBUTTON      "打印标签",IDC_BTN_PRINT,289,209,129,36
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,290,
+                    9,97,43
+    RTEXT           "Project:",IDC_STATIC,12,19,33,10
+    RTEXT           "Order:",IDC_STATIC,130,19,27,10
+    LTEXT           "",IDC_STATIC_CURRENT_ORDER,164,18,114,11,SS_CENTERIMAGE
+    LTEXT           "",IDC_STATIC_CURRENT_COLOR,50,33,75,11,SS_CENTERIMAGE
+    RTEXT           "Color:",IDC_STATIC,12,35,33,10
+    LTEXT           "",IDC_STATIC_CURRENT_COUNT,321,368,96,24
+    RTEXT           "Line:",IDC_STATIC,130,35,27,10
+    LTEXT           "",IDC_STATIC_CURRENT_LINE,164,32,114,11,SS_CENTERIMAGE
+    PUSHBUTTON      "打印设置",IDC_BTN_SETTING,289,322,129,36
+    PUSHBUTTON      "已封查看",IDC_BTN_CHECK,289,284,129,36
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR,292,285,117,35
+    PUSHBUTTON      "删除箱号",IDC_BTN_DELETE,289,247,129,36
+END
+
+IDD_ESPE_BOX DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Specific pallet No."
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,62,50,25
+    PUSHBUTTON      "Cancel",IDCANCEL,105,62,50,25
+    LTEXT           "输入栈板号:",IDC_STATIC,10,34,42,10
+    EDITTEXT        IDC_BOXNAME,117,31,57,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BOXNAME_STATIC,57,31,57,15,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "固定位",IDC_STATIC,62,17,39,10
+    LTEXT           "流水位",IDC_STATIC,123,17,37,10
+END
+
+IDD_CARTONBOX_PRINT DIALOG DISCARDABLE  0, 0, 279, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "栈板标签打印"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "打印当前栈板号",IDC_RADIO_MAIN_SOURCE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,22,113,9
+    CONTROL         "打印特定栈板号",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,
+                    13,39,118,9
+    DEFPUSHBUTTON   "OK",IDOK,7,177,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,222,177,50,14,NOT WS_VISIBLE
+    GROUPBOX        "特定栈板号设置",IDC_STATIC,7,101,265,43
+    LTEXT           "",IDC_STATIC_CURRENT_PRODUCT,173,16,94,9,SS_CENTERIMAGE
+    GROUPBOX        "打印设置",IDC_STATIC,7,7,265,184
+    EDITTEXT        IDC_EDIT_R1,71,116,97,15,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "",IDC_BTN_PRINT_LABLE,98,150,82,33
+    LTEXT           "当前项目:",IDC_STATIC,136,17,34,9
+    LTEXT           "",IDC_STATIC_CURRENT_ORDER_EX,173,36,94,9,
+                    SS_CENTERIMAGE
+    LTEXT           "当前订单:",IDC_STATIC,136,37,34,9
+    LTEXT           "",IDC_STATIC_CURRENT_PALLET_STATIC,171,55,93,10,
+                    SS_CENTERIMAGE
+    LTEXT           "当前栈板号固定位:",IDC_STATIC,101,58,67,10
+    LTEXT           "",IDC_STATIC_CURRENT_PALLET,171,76,93,10,SS_CENTERIMAGE
+    LTEXT           "当前栈板号流水位:",IDC_STATIC,101,76,67,11
+    LTEXT           "栈板号流水位",IDC_STATIC,11,120,49,10
+    COMBOBOX        IDC_COMBO_SOURCE,15,70,74,55,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "打印资源类型",IDC_STATIC,11,57,87,32
+END
+
+IDD_DLG_PASSWORD DIALOG DISCARDABLE  0, 0, 147, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Permission validation"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,62,21,70,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PSW,62,48,70,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,15,77,50,26
+    PUSHBUTTON      "CANCEL",IDCANCEL,82,77,50,26
+    LTEXT           "Password",IDC_STATIC,21,50,36,9
+    LTEXT           "User",IDC_STATIC,22,23,36,9
+END
+
+IDD_POP_MESSAGEBOX DIALOG DISCARDABLE  0, 0, 158, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Error"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,53,86,50,21
+    CTEXT           "FAIL",IDC_STATIC_RESULTS,15,10,128,72,SS_CENTERIMAGE
+END
+
+IDD_DLG_POP_MAINCARTON DIALOG DISCARDABLE  0, 0, 274, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Full pallet tips"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,111,68,50,22
+    CTEXT           "",IDC_STATIC_MAINCARTON,15,20,243,33,SS_CENTERIMAGE
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 187, 177
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_ORDER,47,104,125,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_LINE,47,122,125,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "Select input items",IDC_CHECK_SELECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,23,80,10
+    COMBOBOX        IDC_COMBO_PRODUCT,47,41,119,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ORDER,47,64,119,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,35,148,50,22
+    PUSHBUTTON      "Cancel",IDCANCEL,105,148,50,22
+    RTEXT           "Order",IDC_STATIC,14,107,27,12
+    GROUPBOX        "Scan Input",IDC_STATIC,11,94,166,46
+    GROUPBOX        "Select input",IDC_STATIC,11,10,166,82
+    RTEXT           "Project",IDC_STATIC,15,44,27,12
+    RTEXT           "Order",IDC_STATIC,15,65,27,12
+    RTEXT           "Line",IDC_STATIC,14,124,27,12
+END
+
+IDD_PRINTSETTING DIALOG DISCARDABLE  0, 0, 148, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Print Setting"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,141,50,22
+    PUSHBUTTON      "CANCEL",IDCANCEL,81,141,50,22
+    GROUPBOX        "Main resources",IDC_STATIC,7,3,135,60
+    LTEXT           "原点坐标 ^LH",IDC_STATIC,16,20,63,8
+    LTEXT           "颜色深度~SD",IDC_STATIC,16,42,61,8
+    EDITTEXT        IDC_EDIT_OFFSET,84,17,51,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_COLOR,84,40,51,14,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+    GROUPBOX        "Sub resources",IDC_STATIC,7,67,135,60
+    LTEXT           "原点坐标 ^LH",IDC_STATIC,16,84,63,8
+    LTEXT           "颜色深度~SD",IDC_STATIC,16,106,61,8
+    EDITTEXT        IDC_EDIT_OFFSET_SUB,84,81,51,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EDIT_COLOR_SUB,84,104,51,14,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+IDD_DELETE DIALOG DISCARDABLE  0, 0, 187, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "当前包装栈板中箱号删除"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_CARTON_DEL,54,39,118,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,34,69,41,21
+    PUSHBUTTON      "Cancel",IDCANCEL,110,69,41,21
+    CONTROL         "单个箱号删除",IDC_RADIO_SINGLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,29,16,66,10
+    CONTROL         "整板删除",IDC_RADIO_WHOLE,"Button",BS_AUTORADIOBUTTON,
+                    107,16,49,10
+    LTEXT           "卡通箱号",IDC_STATIC,13,42,35,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Pallet Microsoft Basic class application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Pallet\0"
+            VALUE "LegalCopyright", "Copyright (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Pallet.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Pallet Application\0"
+            VALUE "ProductVersion", "0, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_PACK_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 421
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 397
+    END
+
+    IDD_ESPE_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CARTONBOX_PRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DLG_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_POP_MESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_DLG_POP_MAINCARTON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_PRINTSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DELETE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PACK_FORM DLGINIT
+BEGIN
+    IDC_FLEX, 0x37a, 297, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x3220, 0x0000, 0x22ba, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x0190, 0x7cdc, 0x0001, 0xcb04, 
+0xccce, 0x04e5, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_CARTONBOX_PRINT DLGINIT
+BEGIN
+    IDC_COMBO_SOURCE, 0x403, 14, 0
+0x614d, 0x6e69, 0x7220, 0x7365, 0x756f, 0x6372, 0x0065, 
+    IDC_COMBO_SOURCE, 0x403, 15, 0
+0x6956, 0x6563, 0x7220, 0x7365, 0x756f, 0x6372, 0x7365, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PACK\n\nPACK\n\n\nPACK.Document\nPACK Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Pallet"
+    AFX_IDS_IDLEMESSAGE     "Be ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "Extension"
+    ID_INDICATOR_CAPS       "Capital"
+    ID_INDICATOR_NUM        "Digit"
+    ID_INDICATOR_SCRL       "Roll"
+    ID_INDICATOR_OVR        "Rewrite"
+    ID_INDICATOR_REC        "Record"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\n Create"
+    ID_FILE_OPEN            "Open an existing document \n Open"
+    ID_FILE_CLOSE           "Close the active document \n Close"
+    ID_FILE_SAVE            "Save the active document\n Save"
+    ID_FILE_SAVE_AS         "Save the active document as a new file name\n Save as"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\n About"
+    ID_APP_EXIT             "Exit application; tip save document \n exit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open the document"
+    ID_FILE_MRU_FILE2       "Open the document"
+    ID_FILE_MRU_FILE3       "Open the document"
+    ID_FILE_MRU_FILE4       "Open the document"
+    ID_FILE_MRU_FILE5       "Open the document"
+    ID_FILE_MRU_FILE6       "Open the document"
+    ID_FILE_MRU_FILE7       "Open the document"
+    ID_FILE_MRU_FILE8       "Open the document"
+    ID_FILE_MRU_FILE9       "Open the document"
+    ID_FILE_MRU_FILE10      "Open the document"
+    ID_FILE_MRU_FILE11      "Open the document"
+    ID_FILE_MRU_FILE12      "Open the document"
+    ID_FILE_MRU_FILE13      "Open the document"
+    ID_FILE_MRU_FILE14      "Open the document"
+    ID_FILE_MRU_FILE15      "Open the document"
+    ID_FILE_MRU_FILE16      "Open the document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next pane\nnext pane"
+    ID_PREV_PANE            "Switch back to the previous pane\nprevious pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Separate the active window into a pane\nSeparate"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Delete selected objects\nDelete"
+    ID_EDIT_CLEAR_ALL       "Delete all\nDelete all"
+    ID_EDIT_COPY            "Copy the selected object and put it on the clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selected object and put it on the clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat step operation\nRepeat"
+    ID_EDIT_REPLACE         "Replace the specified text with different text.\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last step\nUndo"
+    ID_EDIT_REDO            "To perform a previously withdrawn operation\nRe execution"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nShow or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nShow or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change window size"
+    AFX_IDS_SCMOVE          "Change window position"
+    AFX_IDS_SCMINIMIZE      "To narrow down the window into icons"
+    AFX_IDS_SCMAXIMIZE      "Zoom in to the maximum size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompt to save all documents."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activation task table"
+    ID_CURRENT_CARTON       "The number of pallets:                                              "
+    ID_MAX_COUNT            "Standard quantity:                    "
+    ID_CURRENT_COUNT        "Current quantity:                   "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LIST_CLEAR          "Clear"
+    IDM_SCAN_ONE            "Scan main IMEI"
+    IDM_SCAN_ALL            "Scan All IMEI"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PACK.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

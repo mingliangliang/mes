@@ -1,0 +1,945 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (f923ae2d).
+//
+// msadox.tli
+//
+// Wrapper implementations for type library c:\Program Files\Common Files\system\ado\msadox.dll
+// compiler-generated file created 05/17/16 at 22:53:56 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface _Collection wrapper method implementations
+//
+
+inline long _Collection::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline IUnknownPtr _Collection::_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = raw__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline HRESULT _Collection::Refresh ( ) {
+    HRESULT _hr = raw_Refresh();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _DynaCollection wrapper method implementations
+//
+
+inline HRESULT _DynaCollection::Append ( IDispatch * Object ) {
+    HRESULT _hr = raw_Append(Object);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _DynaCollection::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Catalog wrapper method implementations
+//
+
+inline TablesPtr _Catalog::GetTables ( ) {
+    struct Tables * _result;
+    HRESULT _hr = get_Tables(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return TablesPtr(_result, false);
+}
+
+inline _variant_t _Catalog::GetActiveConnection ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ActiveConnection(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void _Catalog::PutActiveConnection ( const _variant_t & pVal ) {
+    HRESULT _hr = put_ActiveConnection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void _Catalog::PutRefActiveConnection ( IDispatch * pVal ) {
+    HRESULT _hr = putref_ActiveConnection(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ProceduresPtr _Catalog::GetProcedures ( ) {
+    struct Procedures * _result;
+    HRESULT _hr = get_Procedures(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ProceduresPtr(_result, false);
+}
+
+inline ViewsPtr _Catalog::GetViews ( ) {
+    struct Views * _result;
+    HRESULT _hr = get_Views(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ViewsPtr(_result, false);
+}
+
+inline GroupsPtr _Catalog::GetGroups ( ) {
+    struct Groups * _result;
+    HRESULT _hr = get_Groups(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return GroupsPtr(_result, false);
+}
+
+inline UsersPtr _Catalog::GetUsers ( ) {
+    struct Users * _result;
+    HRESULT _hr = get_Users(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return UsersPtr(_result, false);
+}
+
+inline _variant_t _Catalog::Create ( _bstr_t ConnectString ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_Create(ConnectString, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t _Catalog::GetObjectOwner ( _bstr_t ObjectName, enum ObjectTypeEnum ObjectType, const _variant_t & ObjectTypeId ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetObjectOwner(ObjectName, ObjectType, ObjectTypeId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT _Catalog::SetObjectOwner ( _bstr_t ObjectName, enum ObjectTypeEnum ObjectType, _bstr_t UserName, const _variant_t & ObjectTypeId ) {
+    HRESULT _hr = raw_SetObjectOwner(ObjectName, ObjectType, UserName, ObjectTypeId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Tables wrapper method implementations
+//
+
+inline _TablePtr Tables::GetItem ( const _variant_t & Item ) {
+    struct _Table * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _TablePtr(_result, false);
+}
+
+inline HRESULT Tables::Append ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Append(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Tables::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Table wrapper method implementations
+//
+
+inline ColumnsPtr _Table::GetColumns ( ) {
+    struct Columns * _result;
+    HRESULT _hr = get_Columns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColumnsPtr(_result, false);
+}
+
+inline _bstr_t _Table::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Table::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _Table::GetType ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline IndexesPtr _Table::GetIndexes ( ) {
+    struct Indexes * _result;
+    HRESULT _hr = get_Indexes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IndexesPtr(_result, false);
+}
+
+inline KeysPtr _Table::GetKeys ( ) {
+    struct Keys * _result;
+    HRESULT _hr = get_Keys(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return KeysPtr(_result, false);
+}
+
+inline PropertiesPtr _Table::GetProperties ( ) {
+    struct Properties * _result;
+    HRESULT _hr = get_Properties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertiesPtr(_result, false);
+}
+
+inline _variant_t _Table::GetDateCreated ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateCreated(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t _Table::GetDateModified ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateModified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _CatalogPtr _Table::GetParentCatalog ( ) {
+    struct _Catalog * _result;
+    HRESULT _hr = get_ParentCatalog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _CatalogPtr(_result, false);
+}
+
+inline void _Table::PutParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = put_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void _Table::PutRefParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = putref_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Columns wrapper method implementations
+//
+
+inline _ColumnPtr Columns::GetItem ( const _variant_t & Item ) {
+    struct _Column * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _ColumnPtr(_result, false);
+}
+
+inline HRESULT Columns::Append ( const _variant_t & Item, enum DataTypeEnum Type, long DefinedSize ) {
+    HRESULT _hr = raw_Append(Item, Type, DefinedSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Columns::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Column wrapper method implementations
+//
+
+inline _bstr_t _Column::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Column::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum ColumnAttributesEnum _Column::GetAttributes ( ) {
+    enum ColumnAttributesEnum _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Column::PutAttributes ( enum ColumnAttributesEnum pVal ) {
+    HRESULT _hr = put_Attributes(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _Column::GetDefinedSize ( ) {
+    long _result;
+    HRESULT _hr = get_DefinedSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Column::PutDefinedSize ( long pVal ) {
+    HRESULT _hr = put_DefinedSize(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline unsigned char _Column::GetNumericScale ( ) {
+    unsigned char _result;
+    HRESULT _hr = get_NumericScale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Column::PutNumericScale ( unsigned char pVal ) {
+    HRESULT _hr = put_NumericScale(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long _Column::GetPrecision ( ) {
+    long _result;
+    HRESULT _hr = get_Precision(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Column::PutPrecision ( long pVal ) {
+    HRESULT _hr = put_Precision(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _Column::GetRelatedColumn ( ) {
+    BSTR _result;
+    HRESULT _hr = get_RelatedColumn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Column::PutRelatedColumn ( _bstr_t pVal ) {
+    HRESULT _hr = put_RelatedColumn(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum SortOrderEnum _Column::GetSortOrder ( ) {
+    enum SortOrderEnum _result;
+    HRESULT _hr = get_SortOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Column::PutSortOrder ( enum SortOrderEnum pVal ) {
+    HRESULT _hr = put_SortOrder(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum DataTypeEnum _Column::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Column::PutType ( enum DataTypeEnum pVal ) {
+    HRESULT _hr = put_Type(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline PropertiesPtr _Column::GetProperties ( ) {
+    struct Properties * _result;
+    HRESULT _hr = get_Properties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertiesPtr(_result, false);
+}
+
+inline _CatalogPtr _Column::GetParentCatalog ( ) {
+    struct _Catalog * _result;
+    HRESULT _hr = get_ParentCatalog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _CatalogPtr(_result, false);
+}
+
+inline void _Column::PutParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = put_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void _Column::PutRefParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = putref_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Properties wrapper method implementations
+//
+
+inline PropertyPtr Properties::GetItem ( const _variant_t & Item ) {
+    struct Property * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertyPtr(_result, false);
+}
+
+//
+// interface Property wrapper method implementations
+//
+
+inline _variant_t Property::GetValue ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Value(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void Property::PutValue ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Value(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Property::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline enum DataTypeEnum Property::GetType ( ) {
+    enum DataTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long Property::GetAttributes ( ) {
+    long _result;
+    HRESULT _hr = get_Attributes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void Property::PutAttributes ( long plAttributes ) {
+    HRESULT _hr = put_Attributes(plAttributes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Indexes wrapper method implementations
+//
+
+inline _IndexPtr Indexes::GetItem ( const _variant_t & Item ) {
+    struct _Index * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _IndexPtr(_result, false);
+}
+
+inline HRESULT Indexes::Append ( const _variant_t & Item, const _variant_t & Columns ) {
+    HRESULT _hr = raw_Append(Item, Columns);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Indexes::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Index wrapper method implementations
+//
+
+inline _bstr_t _Index::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Index::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _Index::GetClustered ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Clustered(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Index::PutClustered ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Clustered(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum AllowNullsEnum _Index::GetIndexNulls ( ) {
+    enum AllowNullsEnum _result;
+    HRESULT _hr = get_IndexNulls(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Index::PutIndexNulls ( enum AllowNullsEnum pVal ) {
+    HRESULT _hr = put_IndexNulls(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _Index::GetPrimaryKey ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_PrimaryKey(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Index::PutPrimaryKey ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_PrimaryKey(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL _Index::GetUnique ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Unique(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Index::PutUnique ( VARIANT_BOOL pVal ) {
+    HRESULT _hr = put_Unique(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ColumnsPtr _Index::GetColumns ( ) {
+    struct Columns * _result;
+    HRESULT _hr = get_Columns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColumnsPtr(_result, false);
+}
+
+inline PropertiesPtr _Index::GetProperties ( ) {
+    struct Properties * _result;
+    HRESULT _hr = get_Properties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertiesPtr(_result, false);
+}
+
+//
+// interface Keys wrapper method implementations
+//
+
+inline _KeyPtr Keys::GetItem ( const _variant_t & Item ) {
+    struct _Key * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _KeyPtr(_result, false);
+}
+
+inline HRESULT Keys::Append ( const _variant_t & Item, enum KeyTypeEnum Type, const _variant_t & Column, _bstr_t RelatedTable, _bstr_t RelatedColumn ) {
+    HRESULT _hr = raw_Append(Item, Type, Column, RelatedTable, RelatedColumn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Keys::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Key wrapper method implementations
+//
+
+inline _bstr_t _Key::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Key::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RuleEnum _Key::GetDeleteRule ( ) {
+    enum RuleEnum _result;
+    HRESULT _hr = get_DeleteRule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Key::PutDeleteRule ( enum RuleEnum pVal ) {
+    HRESULT _hr = put_DeleteRule(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum KeyTypeEnum _Key::GetType ( ) {
+    enum KeyTypeEnum _result;
+    HRESULT _hr = get_Type(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Key::PutType ( enum KeyTypeEnum pVal ) {
+    HRESULT _hr = put_Type(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t _Key::GetRelatedTable ( ) {
+    BSTR _result;
+    HRESULT _hr = get_RelatedTable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Key::PutRelatedTable ( _bstr_t pVal ) {
+    HRESULT _hr = put_RelatedTable(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RuleEnum _Key::GetUpdateRule ( ) {
+    enum RuleEnum _result;
+    HRESULT _hr = get_UpdateRule(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void _Key::PutUpdateRule ( enum RuleEnum pVal ) {
+    HRESULT _hr = put_UpdateRule(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ColumnsPtr _Key::GetColumns ( ) {
+    struct Columns * _result;
+    HRESULT _hr = get_Columns(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ColumnsPtr(_result, false);
+}
+
+//
+// interface Procedures wrapper method implementations
+//
+
+inline ProcedurePtr Procedures::GetItem ( const _variant_t & Item ) {
+    struct Procedure * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ProcedurePtr(_result, false);
+}
+
+inline HRESULT Procedures::Append ( _bstr_t Name, IDispatch * Command ) {
+    HRESULT _hr = raw_Append(Name, Command);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Procedures::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface Procedure wrapper method implementations
+//
+
+inline _variant_t Procedure::GetCommand ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Command(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void Procedure::PutCommand ( const _variant_t & pVar ) {
+    HRESULT _hr = put_Command(pVar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void Procedure::PutRefCommand ( IDispatch * pVar ) {
+    HRESULT _hr = putref_Command(pVar);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t Procedure::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t Procedure::GetDateCreated ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateCreated(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t Procedure::GetDateModified ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateModified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface Views wrapper method implementations
+//
+
+inline ViewPtr Views::GetItem ( const _variant_t & Item ) {
+    struct View * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ViewPtr(_result, false);
+}
+
+inline HRESULT Views::Append ( _bstr_t Name, IDispatch * Command ) {
+    HRESULT _hr = raw_Append(Name, Command);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Views::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface View wrapper method implementations
+//
+
+inline _variant_t View::GetCommand ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Command(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline void View::PutCommand ( const _variant_t & pVal ) {
+    HRESULT _hr = put_Command(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void View::PutRefCommand ( IDispatch * pVal ) {
+    HRESULT _hr = putref_Command(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t View::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline _variant_t View::GetDateCreated ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateCreated(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t View::GetDateModified ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_DateModified(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface Groups wrapper method implementations
+//
+
+inline _GroupPtr Groups::GetItem ( const _variant_t & Item ) {
+    struct _Group * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _GroupPtr(_result, false);
+}
+
+inline HRESULT Groups::Append ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Append(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Groups::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _Group25 wrapper method implementations
+//
+
+inline _bstr_t _Group25::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _Group25::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RightsEnum _Group25::GetPermissions ( const _variant_t & Name, enum ObjectTypeEnum ObjectType, const _variant_t & ObjectTypeId ) {
+    enum RightsEnum _result;
+    HRESULT _hr = raw_GetPermissions(Name, ObjectType, ObjectTypeId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _Group25::SetPermissions ( const _variant_t & Name, enum ObjectTypeEnum ObjectType, enum ActionEnum Action, enum RightsEnum Rights, enum InheritTypeEnum Inherit, const _variant_t & ObjectTypeId ) {
+    HRESULT _hr = raw_SetPermissions(Name, ObjectType, Action, Rights, Inherit, ObjectTypeId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline UsersPtr _Group25::GetUsers ( ) {
+    struct Users * _result;
+    HRESULT _hr = get_Users(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return UsersPtr(_result, false);
+}
+
+//
+// interface _Group wrapper method implementations
+//
+
+inline PropertiesPtr _Group::GetProperties ( ) {
+    struct Properties * _result;
+    HRESULT _hr = get_Properties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertiesPtr(_result, false);
+}
+
+inline _CatalogPtr _Group::GetParentCatalog ( ) {
+    struct _Catalog * _result;
+    HRESULT _hr = get_ParentCatalog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _CatalogPtr(_result, false);
+}
+
+inline void _Group::PutParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = put_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void _Group::PutRefParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = putref_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface Users wrapper method implementations
+//
+
+inline _UserPtr Users::GetItem ( const _variant_t & Item ) {
+    struct _User * _result;
+    HRESULT _hr = get_Item(Item, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _UserPtr(_result, false);
+}
+
+inline HRESULT Users::Append ( const _variant_t & Item, _bstr_t Password ) {
+    HRESULT _hr = raw_Append(Item, Password);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT Users::Delete ( const _variant_t & Item ) {
+    HRESULT _hr = raw_Delete(Item);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface _User25 wrapper method implementations
+//
+
+inline _bstr_t _User25::GetName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Name(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void _User25::PutName ( _bstr_t pVal ) {
+    HRESULT _hr = put_Name(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline enum RightsEnum _User25::GetPermissions ( const _variant_t & Name, enum ObjectTypeEnum ObjectType, const _variant_t & ObjectTypeId ) {
+    enum RightsEnum _result;
+    HRESULT _hr = raw_GetPermissions(Name, ObjectType, ObjectTypeId, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT _User25::SetPermissions ( const _variant_t & Name, enum ObjectTypeEnum ObjectType, enum ActionEnum Action, enum RightsEnum Rights, enum InheritTypeEnum Inherit, const _variant_t & ObjectTypeId ) {
+    HRESULT _hr = raw_SetPermissions(Name, ObjectType, Action, Rights, Inherit, ObjectTypeId);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT _User25::ChangePassword ( _bstr_t OldPassword, _bstr_t NewPassword ) {
+    HRESULT _hr = raw_ChangePassword(OldPassword, NewPassword);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline GroupsPtr _User25::GetGroups ( ) {
+    struct Groups * _result;
+    HRESULT _hr = get_Groups(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return GroupsPtr(_result, false);
+}
+
+//
+// interface _User wrapper method implementations
+//
+
+inline PropertiesPtr _User::GetProperties ( ) {
+    struct Properties * _result;
+    HRESULT _hr = get_Properties(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return PropertiesPtr(_result, false);
+}
+
+inline _CatalogPtr _User::GetParentCatalog ( ) {
+    struct _Catalog * _result;
+    HRESULT _hr = get_ParentCatalog(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _CatalogPtr(_result, false);
+}
+
+inline void _User::PutParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = put_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void _User::PutRefParentCatalog ( struct _Catalog * ppvObject ) {
+    HRESULT _hr = putref_ParentCatalog(ppvObject);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}

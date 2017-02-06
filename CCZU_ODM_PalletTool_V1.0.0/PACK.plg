@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PACK - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PACK.res" /d "NDEBUG" "F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PACK.rc"" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8D2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/PACK.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\BtnST.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\CartonBoxPrint.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\config.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\Delete.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\EspeBox.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\font1.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\IniFile.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\LABEL.CPP"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\Login.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\MainFrm.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\msflexgrid1.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PACK.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PACKDoc.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PACKView.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\Password.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\picture1.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PopMainCarton.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PopMessageBox.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\PrintSetting.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\rowcursor1.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\skdlluse.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\Splash.cpp"
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\StateList.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8D2.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8D3.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/PACK.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\lucky\毕业设计\代码\CCZU_MES_System_V1.0.0\CCZU_ODM_PalletTool_V1.0.0\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8D3.tmp" 
+Creating temporary file "C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8D4.tmp" with contents
+[
+Adsapi32.lib Version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/CCZU_ODM_PalletTool.pdb" /machine:I386 /out:"D:\CCZU_MES_V1.0.0\bin\CCZU_ODM_PalletTool.exe" 
+".\Release\BtnST.obj"
+".\Release\CartonBoxPrint.obj"
+".\Release\config.obj"
+".\Release\Delete.obj"
+".\Release\EspeBox.obj"
+".\Release\font1.obj"
+".\Release\IniFile.obj"
+".\Release\LABEL.OBJ"
+".\Release\Login.obj"
+".\Release\MainFrm.obj"
+".\Release\msflexgrid1.obj"
+".\Release\PACK.obj"
+".\Release\PACKDoc.obj"
+".\Release\PACKView.obj"
+".\Release\Password.obj"
+".\Release\picture1.obj"
+".\Release\PopMainCarton.obj"
+".\Release\PopMessageBox.obj"
+".\Release\PrintSetting.obj"
+".\Release\rowcursor1.obj"
+".\Release\skdlluse.obj"
+".\Release\Splash.obj"
+".\Release\StateList.obj"
+".\Release\StdAfx.obj"
+".\Release\PACK.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\LUCKY~1.MIN\LOCALS~1\Temp\RSP8D4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+f:\lucky\毕业设计\代码\cczu_mes_system_v1.0.0\cczu_odm_pallettool_v1.0.0\release\msadox.tlh(1203) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+f:\lucky\毕业设计\代码\cczu_mes_system_v1.0.0\cczu_odm_pallettool_v1.0.0\release\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Compiling...
+BtnST.cpp
+CartonBoxPrint.cpp
+config.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+Delete.cpp
+EspeBox.cpp
+font1.cpp
+IniFile.cpp
+LABEL.CPP
+Login.cpp
+MainFrm.cpp
+msflexgrid1.cpp
+PACK.cpp
+PACKDoc.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+PACKView.cpp
+Password.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+picture1.cpp
+PopMainCarton.cpp
+PopMessageBox.cpp
+PrintSetting.cpp
+rowcursor1.cpp
+Generating Code...
+Compiling...
+skdlluse.cpp
+Splash.cpp
+如果使用了STDAFX.H, 请在STDAFX.H前面定义WINVER为0x0500
+now use sk dynamic lib to link
+StateList.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+CCZU_ODM_PalletTool.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

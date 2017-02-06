@@ -1,0 +1,1373 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (f923ae2d).
+//
+// msadox.tlh
+//
+// C++ source equivalent of type library c:\Program Files\Common Files\system\ado\msadox.dll
+// compiler-generated file created 05/17/16 at 22:53:56 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace ADOX {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("00000512-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Collection;
+struct __declspec(uuid("00000513-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _DynaCollection;
+struct __declspec(uuid("00000603-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Catalog;
+struct __declspec(uuid("00000611-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Tables;
+struct /* coclass */ Table;
+struct __declspec(uuid("00000610-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Table;
+struct __declspec(uuid("0000061d-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Columns;
+struct /* coclass */ Column;
+struct __declspec(uuid("0000061c-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Column;
+struct __declspec(uuid("00000504-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Properties;
+struct __declspec(uuid("00000503-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Property;
+struct __declspec(uuid("00000620-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Indexes;
+struct /* coclass */ Index;
+struct __declspec(uuid("0000061f-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Index;
+struct __declspec(uuid("00000623-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Keys;
+struct /* coclass */ Key;
+struct __declspec(uuid("00000622-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Key;
+struct __declspec(uuid("00000626-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Procedures;
+struct __declspec(uuid("00000625-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Procedure;
+struct __declspec(uuid("00000614-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Views;
+struct __declspec(uuid("00000613-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ View;
+struct __declspec(uuid("00000617-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Groups;
+struct /* coclass */ Group;
+struct __declspec(uuid("00000628-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Group;
+struct __declspec(uuid("00000616-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _Group25;
+struct __declspec(uuid("0000061a-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ Users;
+struct /* coclass */ User;
+struct __declspec(uuid("00000627-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _User;
+struct __declspec(uuid("00000619-0000-0010-8000-00aa006d2ea4"))
+/* dual interface */ _User25;
+struct /* coclass */ Catalog;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_Collection, __uuidof(_Collection));
+_COM_SMARTPTR_TYPEDEF(_DynaCollection, __uuidof(_DynaCollection));
+_COM_SMARTPTR_TYPEDEF(_Catalog, __uuidof(_Catalog));
+_COM_SMARTPTR_TYPEDEF(Tables, __uuidof(Tables));
+_COM_SMARTPTR_TYPEDEF(_Table, __uuidof(_Table));
+_COM_SMARTPTR_TYPEDEF(Columns, __uuidof(Columns));
+_COM_SMARTPTR_TYPEDEF(_Column, __uuidof(_Column));
+_COM_SMARTPTR_TYPEDEF(Properties, __uuidof(Properties));
+_COM_SMARTPTR_TYPEDEF(Property, __uuidof(Property));
+_COM_SMARTPTR_TYPEDEF(Indexes, __uuidof(Indexes));
+_COM_SMARTPTR_TYPEDEF(_Index, __uuidof(_Index));
+_COM_SMARTPTR_TYPEDEF(Keys, __uuidof(Keys));
+_COM_SMARTPTR_TYPEDEF(_Key, __uuidof(_Key));
+_COM_SMARTPTR_TYPEDEF(Procedures, __uuidof(Procedures));
+_COM_SMARTPTR_TYPEDEF(Procedure, __uuidof(Procedure));
+_COM_SMARTPTR_TYPEDEF(Views, __uuidof(Views));
+_COM_SMARTPTR_TYPEDEF(View, __uuidof(View));
+_COM_SMARTPTR_TYPEDEF(Groups, __uuidof(Groups));
+_COM_SMARTPTR_TYPEDEF(_Group25, __uuidof(_Group25));
+_COM_SMARTPTR_TYPEDEF(_Group, __uuidof(_Group));
+_COM_SMARTPTR_TYPEDEF(Users, __uuidof(Users));
+_COM_SMARTPTR_TYPEDEF(_User25, __uuidof(_User25));
+_COM_SMARTPTR_TYPEDEF(_User, __uuidof(_User));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("00000512-0000-0010-8000-00aa006d2ea4"))
+_Collection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetCount))
+    long Count;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    IUnknownPtr _NewEnum ( );
+    HRESULT Refresh ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Count (
+        long * c ) = 0;
+    virtual HRESULT __stdcall raw__NewEnum (
+        IUnknown * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Refresh ( ) = 0;
+};
+
+struct __declspec(uuid("00000513-0000-0010-8000-00aa006d2ea4"))
+_DynaCollection : _Collection
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Append (
+        IDispatch * Object );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Append (
+        IDispatch * Object ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000603-0000-0010-8000-00aa006d2ea4"))
+_Catalog : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetTables))
+    TablesPtr Tables;
+    __declspec(property(get=GetProcedures))
+    ProceduresPtr Procedures;
+    __declspec(property(get=GetViews))
+    ViewsPtr Views;
+    __declspec(property(get=GetGroups))
+    GroupsPtr Groups;
+    __declspec(property(get=GetUsers))
+    UsersPtr Users;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    TablesPtr GetTables ( );
+    _variant_t GetActiveConnection ( );
+    void PutActiveConnection (
+        const _variant_t & pVal );
+    void PutRefActiveConnection (
+        IDispatch * pVal );
+    ProceduresPtr GetProcedures ( );
+    ViewsPtr GetViews ( );
+    GroupsPtr GetGroups ( );
+    UsersPtr GetUsers ( );
+    _variant_t Create (
+        _bstr_t ConnectString );
+    _bstr_t GetObjectOwner (
+        _bstr_t ObjectName,
+        enum ObjectTypeEnum ObjectType,
+        const _variant_t & ObjectTypeId = vtMissing );
+    HRESULT SetObjectOwner (
+        _bstr_t ObjectName,
+        enum ObjectTypeEnum ObjectType,
+        _bstr_t UserName,
+        const _variant_t & ObjectTypeId = vtMissing );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Tables (
+        struct Tables * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_ActiveConnection (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ActiveConnection (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_ActiveConnection (
+        IDispatch * pVal ) = 0;
+    virtual HRESULT __stdcall get_Procedures (
+        struct Procedures * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Views (
+        struct Views * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Groups (
+        struct Groups * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Users (
+        struct Users * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Create (
+        BSTR ConnectString,
+        VARIANT * Connection ) = 0;
+    virtual HRESULT __stdcall raw_GetObjectOwner (
+        BSTR ObjectName,
+        enum ObjectTypeEnum ObjectType,
+        VARIANT ObjectTypeId,
+        BSTR * OwnerName ) = 0;
+    virtual HRESULT __stdcall raw_SetObjectOwner (
+        BSTR ObjectName,
+        enum ObjectTypeEnum ObjectType,
+        BSTR UserName,
+        VARIANT ObjectTypeId = vtMissing ) = 0;
+};
+
+struct __declspec(uuid("00000611-0000-0010-8000-00aa006d2ea4"))
+Tables : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _TablePtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _TablePtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        const _variant_t & Item );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct _Table * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        VARIANT Item ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000609-0000-0010-8000-00aa006d2ea4"))
+Table;
+    // [ default ] interface _Table
+
+struct __declspec(uuid("00000610-0000-0010-8000-00aa006d2ea4"))
+_Table : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetColumns))
+    ColumnsPtr Columns;
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetType))
+    _bstr_t Type;
+    __declspec(property(get=GetIndexes))
+    IndexesPtr Indexes;
+    __declspec(property(get=GetKeys))
+    KeysPtr Keys;
+    __declspec(property(get=GetProperties))
+    PropertiesPtr Properties;
+    __declspec(property(get=GetDateCreated))
+    _variant_t DateCreated;
+    __declspec(property(get=GetDateModified))
+    _variant_t DateModified;
+    __declspec(property(get=GetParentCatalog,put=PutRefParentCatalog))
+    _CatalogPtr ParentCatalog;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ColumnsPtr GetColumns ( );
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    _bstr_t GetType ( );
+    IndexesPtr GetIndexes ( );
+    KeysPtr GetKeys ( );
+    PropertiesPtr GetProperties ( );
+    _variant_t GetDateCreated ( );
+    _variant_t GetDateModified ( );
+    _CatalogPtr GetParentCatalog ( );
+    void PutParentCatalog (
+        struct _Catalog * ppvObject );
+    void PutRefParentCatalog (
+        struct _Catalog * ppvObject );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Columns (
+        struct Columns * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_Indexes (
+        struct Indexes * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Keys (
+        struct Keys * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Properties (
+        struct Properties * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_DateCreated (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_DateModified (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_ParentCatalog (
+        struct _Catalog * * ppvObject ) = 0;
+    virtual HRESULT __stdcall put_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+    virtual HRESULT __stdcall putref_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+};
+
+struct __declspec(uuid("0000061d-0000-0010-8000-00aa006d2ea4"))
+Columns : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _ColumnPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _ColumnPtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        const _variant_t & Item,
+        enum DataTypeEnum Type,
+        long DefinedSize );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct _Column * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        VARIANT Item,
+        enum DataTypeEnum Type,
+        long DefinedSize ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("0000061b-0000-0010-8000-00aa006d2ea4"))
+Column;
+    // [ default ] interface _Column
+
+struct __declspec(uuid("0000061c-0000-0010-8000-00aa006d2ea4"))
+_Column : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetAttributes,put=PutAttributes))
+    enum ColumnAttributesEnum Attributes;
+    __declspec(property(get=GetDefinedSize,put=PutDefinedSize))
+    long DefinedSize;
+    __declspec(property(get=GetNumericScale,put=PutNumericScale))
+    unsigned char NumericScale;
+    __declspec(property(get=GetPrecision,put=PutPrecision))
+    long Precision;
+    __declspec(property(get=GetRelatedColumn,put=PutRelatedColumn))
+    _bstr_t RelatedColumn;
+    __declspec(property(get=GetSortOrder,put=PutSortOrder))
+    enum SortOrderEnum SortOrder;
+    __declspec(property(get=GetType,put=PutType))
+    enum DataTypeEnum Type;
+    __declspec(property(get=GetProperties))
+    PropertiesPtr Properties;
+    __declspec(property(get=GetParentCatalog,put=PutRefParentCatalog))
+    _CatalogPtr ParentCatalog;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    enum ColumnAttributesEnum GetAttributes ( );
+    void PutAttributes (
+        enum ColumnAttributesEnum pVal );
+    long GetDefinedSize ( );
+    void PutDefinedSize (
+        long pVal );
+    unsigned char GetNumericScale ( );
+    void PutNumericScale (
+        unsigned char pVal );
+    long GetPrecision ( );
+    void PutPrecision (
+        long pVal );
+    _bstr_t GetRelatedColumn ( );
+    void PutRelatedColumn (
+        _bstr_t pVal );
+    enum SortOrderEnum GetSortOrder ( );
+    void PutSortOrder (
+        enum SortOrderEnum pVal );
+    enum DataTypeEnum GetType ( );
+    void PutType (
+        enum DataTypeEnum pVal );
+    PropertiesPtr GetProperties ( );
+    _CatalogPtr GetParentCatalog ( );
+    void PutParentCatalog (
+        struct _Catalog * ppvObject );
+    void PutRefParentCatalog (
+        struct _Catalog * ppvObject );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Attributes (
+        enum ColumnAttributesEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_Attributes (
+        enum ColumnAttributesEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_DefinedSize (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DefinedSize (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_NumericScale (
+        unsigned char * pVal ) = 0;
+    virtual HRESULT __stdcall put_NumericScale (
+        unsigned char pVal ) = 0;
+    virtual HRESULT __stdcall get_Precision (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Precision (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_RelatedColumn (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_RelatedColumn (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SortOrder (
+        enum SortOrderEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_SortOrder (
+        enum SortOrderEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum DataTypeEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_Type (
+        enum DataTypeEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_Properties (
+        struct Properties * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_ParentCatalog (
+        struct _Catalog * * ppvObject ) = 0;
+    virtual HRESULT __stdcall put_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+    virtual HRESULT __stdcall putref_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+};
+
+enum ColumnAttributesEnum
+{
+    adColFixed = 1,
+    adColNullable = 2
+};
+
+enum SortOrderEnum
+{
+    adSortAscending = 1,
+    adSortDescending = 2
+};
+
+enum DataTypeEnum
+{
+    adEmpty = 0,
+    adTinyInt = 16,
+    adSmallInt = 2,
+    adInteger = 3,
+    adBigInt = 20,
+    adUnsignedTinyInt = 17,
+    adUnsignedSmallInt = 18,
+    adUnsignedInt = 19,
+    adUnsignedBigInt = 21,
+    adSingle = 4,
+    adDouble = 5,
+    adCurrency = 6,
+    adDecimal = 14,
+    adNumeric = 131,
+    adBoolean = 11,
+    adError = 10,
+    adUserDefined = 132,
+    adVariant = 12,
+    adIDispatch = 9,
+    adIUnknown = 13,
+    adGUID = 72,
+    adDate = 7,
+    adDBDate = 133,
+    adDBTime = 134,
+    adDBTimeStamp = 135,
+    adBSTR = 8,
+    adChar = 129,
+    adVarChar = 200,
+    adLongVarChar = 201,
+    adWChar = 130,
+    adVarWChar = 202,
+    adLongVarWChar = 203,
+    adBinary = 128,
+    adVarBinary = 204,
+    adLongVarBinary = 205,
+    adChapter = 136,
+    adFileTime = 64,
+    adPropVariant = 138,
+    adVarNumeric = 139
+};
+
+struct __declspec(uuid("00000504-0000-0010-8000-00aa006d2ea4"))
+Properties : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    PropertyPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    PropertyPtr GetItem (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct Property * * ppvObject ) = 0;
+};
+
+struct __declspec(uuid("00000503-0000-0010-8000-00aa006d2ea4"))
+Property : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetValue,put=PutValue))
+    _variant_t Value;
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetType))
+    enum DataTypeEnum Type;
+    __declspec(property(get=GetAttributes,put=PutAttributes))
+    long Attributes;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetValue ( );
+    void PutValue (
+        const _variant_t & pVal );
+    _bstr_t GetName ( );
+    enum DataTypeEnum GetType ( );
+    long GetAttributes ( );
+    void PutAttributes (
+        long plAttributes );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Value (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Value (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pbstr ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum DataTypeEnum * ptype ) = 0;
+    virtual HRESULT __stdcall get_Attributes (
+        long * plAttributes ) = 0;
+    virtual HRESULT __stdcall put_Attributes (
+        long plAttributes ) = 0;
+};
+
+struct __declspec(uuid("00000620-0000-0010-8000-00aa006d2ea4"))
+Indexes : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _IndexPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _IndexPtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        const _variant_t & Item,
+        const _variant_t & Columns = vtMissing );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct _Index * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        VARIANT Item,
+        VARIANT Columns = vtMissing ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("0000061e-0000-0010-8000-00aa006d2ea4"))
+Index;
+    // [ default ] interface _Index
+
+struct __declspec(uuid("0000061f-0000-0010-8000-00aa006d2ea4"))
+_Index : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetClustered,put=PutClustered))
+    VARIANT_BOOL Clustered;
+    __declspec(property(get=GetIndexNulls,put=PutIndexNulls))
+    enum AllowNullsEnum IndexNulls;
+    __declspec(property(get=GetPrimaryKey,put=PutPrimaryKey))
+    VARIANT_BOOL PrimaryKey;
+    __declspec(property(get=GetUnique,put=PutUnique))
+    VARIANT_BOOL Unique;
+    __declspec(property(get=GetColumns))
+    ColumnsPtr Columns;
+    __declspec(property(get=GetProperties))
+    PropertiesPtr Properties;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    VARIANT_BOOL GetClustered ( );
+    void PutClustered (
+        VARIANT_BOOL pVal );
+    enum AllowNullsEnum GetIndexNulls ( );
+    void PutIndexNulls (
+        enum AllowNullsEnum pVal );
+    VARIANT_BOOL GetPrimaryKey ( );
+    void PutPrimaryKey (
+        VARIANT_BOOL pVal );
+    VARIANT_BOOL GetUnique ( );
+    void PutUnique (
+        VARIANT_BOOL pVal );
+    ColumnsPtr GetColumns ( );
+    PropertiesPtr GetProperties ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Clustered (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_Clustered (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_IndexNulls (
+        enum AllowNullsEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_IndexNulls (
+        enum AllowNullsEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_PrimaryKey (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_PrimaryKey (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Unique (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_Unique (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall get_Columns (
+        struct Columns * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_Properties (
+        struct Properties * * ppvObject ) = 0;
+};
+
+enum AllowNullsEnum
+{
+    adIndexNullsAllow = 0,
+    adIndexNullsDisallow = 1,
+    adIndexNullsIgnore = 2,
+    adIndexNullsIgnoreAny = 4
+};
+
+struct __declspec(uuid("00000623-0000-0010-8000-00aa006d2ea4"))
+Keys : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _KeyPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _KeyPtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        const _variant_t & Item,
+        enum KeyTypeEnum Type,
+        const _variant_t & Column,
+        _bstr_t RelatedTable,
+        _bstr_t RelatedColumn );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct _Key * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        VARIANT Item,
+        enum KeyTypeEnum Type,
+        VARIANT Column,
+        BSTR RelatedTable,
+        BSTR RelatedColumn ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000621-0000-0010-8000-00aa006d2ea4"))
+Key;
+    // [ default ] interface _Key
+
+struct __declspec(uuid("00000622-0000-0010-8000-00aa006d2ea4"))
+_Key : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetDeleteRule,put=PutDeleteRule))
+    enum RuleEnum DeleteRule;
+    __declspec(property(get=GetType,put=PutType))
+    enum KeyTypeEnum Type;
+    __declspec(property(get=GetRelatedTable,put=PutRelatedTable))
+    _bstr_t RelatedTable;
+    __declspec(property(get=GetUpdateRule,put=PutUpdateRule))
+    enum RuleEnum UpdateRule;
+    __declspec(property(get=GetColumns))
+    ColumnsPtr Columns;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    enum RuleEnum GetDeleteRule ( );
+    void PutDeleteRule (
+        enum RuleEnum pVal );
+    enum KeyTypeEnum GetType ( );
+    void PutType (
+        enum KeyTypeEnum pVal );
+    _bstr_t GetRelatedTable ( );
+    void PutRelatedTable (
+        _bstr_t pVal );
+    enum RuleEnum GetUpdateRule ( );
+    void PutUpdateRule (
+        enum RuleEnum pVal );
+    ColumnsPtr GetColumns ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_DeleteRule (
+        enum RuleEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_DeleteRule (
+        enum RuleEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_Type (
+        enum KeyTypeEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_Type (
+        enum KeyTypeEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_RelatedTable (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_RelatedTable (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_UpdateRule (
+        enum RuleEnum * pVal ) = 0;
+    virtual HRESULT __stdcall put_UpdateRule (
+        enum RuleEnum pVal ) = 0;
+    virtual HRESULT __stdcall get_Columns (
+        struct Columns * * ppvObject ) = 0;
+};
+
+enum RuleEnum
+{
+    adRINone = 0,
+    adRICascade = 1,
+    adRISetNull = 2,
+    adRISetDefault = 3
+};
+
+enum KeyTypeEnum
+{
+    adKeyPrimary = 1,
+    adKeyForeign = 2,
+    adKeyUnique = 3
+};
+
+struct __declspec(uuid("00000626-0000-0010-8000-00aa006d2ea4"))
+Procedures : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ProcedurePtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ProcedurePtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        _bstr_t Name,
+        IDispatch * Command );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct Procedure * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        BSTR Name,
+        IDispatch * Command ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000625-0000-0010-8000-00aa006d2ea4"))
+Procedure : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDateCreated))
+    _variant_t DateCreated;
+    __declspec(property(get=GetDateModified))
+    _variant_t DateModified;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetCommand ( );
+    void PutCommand (
+        const _variant_t & pVar );
+    void PutRefCommand (
+        IDispatch * pVar );
+    _bstr_t GetName ( );
+    _variant_t GetDateCreated ( );
+    _variant_t GetDateModified ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Command (
+        VARIANT * pVar ) = 0;
+    virtual HRESULT __stdcall put_Command (
+        VARIANT pVar ) = 0;
+    virtual HRESULT __stdcall putref_Command (
+        IDispatch * pVar ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_DateCreated (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_DateModified (
+        VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("00000614-0000-0010-8000-00aa006d2ea4"))
+Views : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ViewPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ViewPtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        _bstr_t Name,
+        IDispatch * Command );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct View * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        BSTR Name,
+        IDispatch * Command ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000613-0000-0010-8000-00aa006d2ea4"))
+View : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=GetDateCreated))
+    _variant_t DateCreated;
+    __declspec(property(get=GetDateModified))
+    _variant_t DateModified;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetCommand ( );
+    void PutCommand (
+        const _variant_t & pVal );
+    void PutRefCommand (
+        IDispatch * pVal );
+    _bstr_t GetName ( );
+    _variant_t GetDateCreated ( );
+    _variant_t GetDateModified ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Command (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Command (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall putref_Command (
+        IDispatch * pVal ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall get_DateCreated (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_DateModified (
+        VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("00000617-0000-0010-8000-00aa006d2ea4"))
+Groups : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _GroupPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _GroupPtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        const _variant_t & Item );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct _Group * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        VARIANT Item ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000615-0000-0010-8000-00aa006d2ea4"))
+Group;
+    // [ default ] interface _Group
+
+struct __declspec(uuid("00000616-0000-0010-8000-00aa006d2ea4"))
+_Group25 : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetUsers))
+    UsersPtr Users;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    enum RightsEnum GetPermissions (
+        const _variant_t & Name,
+        enum ObjectTypeEnum ObjectType,
+        const _variant_t & ObjectTypeId = vtMissing );
+    HRESULT SetPermissions (
+        const _variant_t & Name,
+        enum ObjectTypeEnum ObjectType,
+        enum ActionEnum Action,
+        enum RightsEnum Rights,
+        enum InheritTypeEnum Inherit,
+        const _variant_t & ObjectTypeId = vtMissing );
+    UsersPtr GetUsers ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetPermissions (
+        VARIANT Name,
+        enum ObjectTypeEnum ObjectType,
+        VARIANT ObjectTypeId,
+        enum RightsEnum * Rights ) = 0;
+    virtual HRESULT __stdcall raw_SetPermissions (
+        VARIANT Name,
+        enum ObjectTypeEnum ObjectType,
+        enum ActionEnum Action,
+        enum RightsEnum Rights,
+        enum InheritTypeEnum Inherit,
+        VARIANT ObjectTypeId = vtMissing ) = 0;
+    virtual HRESULT __stdcall get_Users (
+        struct Users * * ppvObject ) = 0;
+};
+
+struct __declspec(uuid("00000628-0000-0010-8000-00aa006d2ea4"))
+_Group : _Group25
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetProperties))
+    PropertiesPtr Properties;
+    __declspec(property(get=GetParentCatalog,put=PutRefParentCatalog))
+    _CatalogPtr ParentCatalog;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    PropertiesPtr GetProperties ( );
+    _CatalogPtr GetParentCatalog ( );
+    void PutParentCatalog (
+        struct _Catalog * ppvObject );
+    void PutRefParentCatalog (
+        struct _Catalog * ppvObject );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Properties (
+        struct Properties * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_ParentCatalog (
+        struct _Catalog * * ppvObject ) = 0;
+    virtual HRESULT __stdcall put_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+    virtual HRESULT __stdcall putref_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+};
+
+enum ObjectTypeEnum
+{
+    adPermObjProviderSpecific = -1,
+    adPermObjTable = 1,
+    adPermObjColumn = 2,
+    adPermObjDatabase = 3,
+    adPermObjProcedure = 4,
+    adPermObjView = 5
+};
+
+enum RightsEnum
+{
+    adRightNone = 0,
+    adRightDrop = 256,
+    adRightExclusive = 512,
+    adRightReadDesign = 1024,
+    adRightWriteDesign = 2048,
+    adRightWithGrant = 4096,
+    adRightReference = 8192,
+    adRightCreate = 16384,
+    adRightInsert = 32768,
+    adRightDelete = 65536,
+    adRightReadPermissions = 131072,
+    adRightWritePermissions = 262144,
+    adRightWriteOwner = 524288,
+    adRightMaximumAllowed = 33554432,
+    adRightFull = 268435456,
+    adRightExecute = 536870912,
+    adRightUpdate = 1073741824,
+    adRightRead = -2147483648
+};
+
+enum ActionEnum
+{
+    adAccessGrant = 1,
+    adAccessSet = 2,
+    adAccessDeny = 3,
+    adAccessRevoke = 4
+};
+
+enum InheritTypeEnum
+{
+    adInheritNone = 0,
+    adInheritObjects = 1,
+    adInheritContainers = 2,
+    adInheritBoth = 3,
+    adInheritNoPropogate = 4
+};
+
+struct __declspec(uuid("0000061a-0000-0010-8000-00aa006d2ea4"))
+Users : _Collection
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _UserPtr Item[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _UserPtr GetItem (
+        const _variant_t & Item );
+    HRESULT Append (
+        const _variant_t & Item,
+        _bstr_t Password );
+    HRESULT Delete (
+        const _variant_t & Item );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Item,
+        struct _User * * ppvObject ) = 0;
+    virtual HRESULT __stdcall raw_Append (
+        VARIANT Item,
+        BSTR Password ) = 0;
+    virtual HRESULT __stdcall raw_Delete (
+        VARIANT Item ) = 0;
+};
+
+struct __declspec(uuid("00000618-0000-0010-8000-00aa006d2ea4"))
+User;
+    // [ default ] interface _User
+
+struct __declspec(uuid("00000619-0000-0010-8000-00aa006d2ea4"))
+_User25 : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName,put=PutName))
+    _bstr_t Name;
+    __declspec(property(get=GetGroups))
+    GroupsPtr Groups;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    void PutName (
+        _bstr_t pVal );
+    enum RightsEnum GetPermissions (
+        const _variant_t & Name,
+        enum ObjectTypeEnum ObjectType,
+        const _variant_t & ObjectTypeId = vtMissing );
+    HRESULT SetPermissions (
+        const _variant_t & Name,
+        enum ObjectTypeEnum ObjectType,
+        enum ActionEnum Action,
+        enum RightsEnum Rights,
+        enum InheritTypeEnum Inherit,
+        const _variant_t & ObjectTypeId = vtMissing );
+    HRESULT ChangePassword (
+        _bstr_t OldPassword,
+        _bstr_t NewPassword );
+    GroupsPtr GetGroups ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Name (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetPermissions (
+        VARIANT Name,
+        enum ObjectTypeEnum ObjectType,
+        VARIANT ObjectTypeId,
+        enum RightsEnum * Rights ) = 0;
+    virtual HRESULT __stdcall raw_SetPermissions (
+        VARIANT Name,
+        enum ObjectTypeEnum ObjectType,
+        enum ActionEnum Action,
+        enum RightsEnum Rights,
+        enum InheritTypeEnum Inherit,
+        VARIANT ObjectTypeId = vtMissing ) = 0;
+    virtual HRESULT __stdcall raw_ChangePassword (
+        BSTR OldPassword,
+        BSTR NewPassword ) = 0;
+    virtual HRESULT __stdcall get_Groups (
+        struct Groups * * ppvObject ) = 0;
+};
+
+struct __declspec(uuid("00000627-0000-0010-8000-00aa006d2ea4"))
+_User : _User25
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetProperties))
+    PropertiesPtr Properties;
+    __declspec(property(get=GetParentCatalog,put=PutRefParentCatalog))
+    _CatalogPtr ParentCatalog;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    PropertiesPtr GetProperties ( );
+    _CatalogPtr GetParentCatalog ( );
+    void PutParentCatalog (
+        struct _Catalog * ppvObject );
+    void PutRefParentCatalog (
+        struct _Catalog * ppvObject );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Properties (
+        struct Properties * * ppvObject ) = 0;
+    virtual HRESULT __stdcall get_ParentCatalog (
+        struct _Catalog * * ppvObject ) = 0;
+    virtual HRESULT __stdcall put_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+    virtual HRESULT __stdcall putref_ParentCatalog (
+        struct _Catalog * ppvObject ) = 0;
+};
+
+struct __declspec(uuid("00000602-0000-0010-8000-00aa006d2ea4"))
+Catalog;
+    // [ default ] interface _Catalog
+
+//
+// Wrapper method implementations
+//
+
+#include "msadox.tli"
+
+} // namespace ADOX
+
+#pragma pack(pop)
