@@ -1,0 +1,140 @@
+# Microsoft Developer Studio Generated Dependency File, included by PACK.mak
+
+.\BtnST.cpp : \
+	".\BtnST.h"\
+	".\StdAfx.h"\
+	
+
+.\config.cpp : \
+	".\config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\excel.cpp : \
+	".\excel.h"\
+	".\StdAfx.h"\
+	
+
+.\font1.cpp : \
+	".\font1.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\LABEL.CPP : \
+	".\LABEL.H"\
+	".\StdAfx.h"\
+	
+
+.\MainFrm.cpp : \
+	".\MainFrm.h"\
+	".\PACK.h"\
+	".\StdAfx.h"\
+	
+
+.\msflexgrid1.cpp : \
+	".\font1.h"\
+	".\msflexgrid1.h"\
+	".\picture1.h"\
+	".\rowcursor1.h"\
+	".\StdAfx.h"\
+	
+
+.\PACK.cpp : \
+	".\BtnST.h"\
+	".\config.h"\
+	".\excel.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\MainFrm.h"\
+	".\msflexgrid1.h"\
+	".\PACK.h"\
+	".\PACKDoc.h"\
+	".\PACKView.h"\
+	".\skapi.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\PACK.rc : \
+	".\res\box.ico"\
+	".\res\DEWAV LOGON.bmp"\
+	".\res\discard.ICO"\
+	".\res\ERROR.ico"\
+	".\res\EXPORT.ICO"\
+	".\res\ico00001.ico"\
+	".\res\icon5.ico"\
+	".\res\IDB_BITMAPSPLASH.bmp"\
+	".\res\PACK.ico"\
+	".\res\PACK.rc2"\
+	".\res\PACKDoc.ico"\
+	".\res\PRINT004.ICO"\
+	".\res\PRINT012.ICO"\
+	".\res\Toolbar.bmp"\
+	
+
+.\PACKDoc.cpp : \
+	".\PACK.h"\
+	".\PACKDoc.h"\
+	".\StdAfx.h"\
+	
+
+.\PACKView.cpp : \
+	".\BtnST.h"\
+	".\config.h"\
+	".\excel.h"\
+	".\IniFile.h"\
+	".\LABEL.H"\
+	".\MainFrm.h"\
+	".\msflexgrid1.h"\
+	".\PACK.h"\
+	".\PACKDoc.h"\
+	".\PACKView.h"\
+	".\Password.h"\
+	".\skapi.h"\
+	".\Splash.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\Password.cpp : \
+	".\PACK.h"\
+	".\Password.h"\
+	".\StdAfx.h"\
+	
+
+.\picture1.cpp : \
+	".\picture1.h"\
+	".\StdAfx.h"\
+
+
+.\rowcursor1.cpp : \
+	".\rowcursor1.h"\
+	".\StdAfx.h"\
+	
+
+.\skdlluse.cpp : \
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\Splash.cpp : \
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\StateList.cpp : \
+	".\PACK.h"\
+	".\StateList.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
