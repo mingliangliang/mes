@@ -1,0 +1,58 @@
+# Microsoft Developer Studio Generated Dependency File, included by ProductionManagementTool.mak
+
+.\AddUserDlg.cpp : \
+	".\AddUserDlg.h"\
+	".\ProductionManagementTool.h"\
+	
+
+.\ChangePasswordDlg.cpp : \
+	".\ChangePasswordDlg.h"\
+	".\ProductionManagementTool.h"\
+	
+
+.\config.cpp : \
+	".\config.h"\
+	".\IniFile.h"\
+	
+
+.\DeleteUserDlg.cpp : \
+	".\DeleteUserDlg.h"\
+	".\ProductionManagementTool.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	
+
+.\ProductionManagementTool.cpp : \
+	".\AddUserDlg.h"\
+	".\ChangePasswordDlg.h"\
+	".\config.h"\
+	".\DeleteUserDlg.h"\
+	".\IniFile.h"\
+	".\ProductionManagementTool.h"\
+	".\ProductionManagementToolDlg.h"\
+	
+
+.\ProductionManagementTool.rc : \
+	".\res\DEWAV.bmp"\
+	".\res\ProductionManagementTool.ico"\
+	".\res\ProductionManagementTool.rc2"\
+	
+
+.\ProductionManagementToolDlg.cpp : \
+	".\AddUserDlg.h"\
+	".\ChangePasswordDlg.h"\
+	".\config.h"\
+	".\DeleteUserDlg.h"\
+	".\IniFile.h"\
+	".\ProductionManagementTool.h"\
+	".\ProductionManagementToolDlg.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"c:\program files\common files\system\ado\msado15.dll"\
+	"c:\program files\common files\system\ado\msadox.dll"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	

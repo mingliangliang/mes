@@ -1,0 +1,468 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ProductionManagementTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ProductionManagementTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 280, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CCZU_ODM_ProductionManagementTool_V1.0.0"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "CCZU_ODM_ProductionManagementTool_V1.0.0",IDC_STATIC,16,
+                    10,167,8,SS_NOPREFIX
+    LTEXT           "Create by 明亮 2016_04_11",IDC_STATIC,16,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,219,33,54,23,WS_GROUP
+    LTEXT           "Last Update 明亮 2016_04_11",IDC_STATIC,16,42,119,8
+END
+
+IDD_PRODUCTIONMANAGEMENTTOOL_DIALOG DIALOGEX 0, 0, 463, 341
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_VSCROLL | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CCZU ODM MES系统——生产管理工具"
+FONT 9, "微软雅黑"
+BEGIN
+    EDITTEXT        IDC_EDIT_MACHINE,67,127,120,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DATABASE,67,140,120,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SQLUSER,66,153,120,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SQLPSW,66,166,120,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOGINNAME,66,179,120,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOGINPSW,66,192,120,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "连接数据库",IDC_CONNECTSQL,12,206,59,17
+    PUSHBUTTON      "更改数据库密码",IDC_CHANGESQLPASSWORD,71,206,59,17
+    PUSHBUTTON      "更改数据库信息",IDC_SQL,130,206,59,17
+    PUSHBUTTON      "添加用户",IDC_ADDUSER,11,240,59,17
+    PUSHBUTTON      "删除用户",IDC_DELETEUSER,70,240,59,17
+    PUSHBUTTON      "更改密码",IDC_CHANGEPASSWORD,129,240,59,17
+    EDITTEXT        IDC_EDIT_PRODUCT,29,280,159,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ORDER,29,294,159,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "录入项目订单",IDC_CREATE_ORDER,31,310,53,14
+    PUSHBUTTON      "订单删除",IDC_ALTERSETTING,117,310,53,14
+    EDITTEXT        IDC_EDIT_CREATEPRODUCT,268,121,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WRITETOOL,268,147,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHECKIMEIS1,268,160,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COLORBOX,268,173,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHECKIMEIS2,268,186,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COLORBOXWEIGH,268,199,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PACK,268,212,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CARTONWEIGH,268,225,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PALLET,268,238,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHECKORDER,268,251,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PRODUCTIONDATAQUERY,268,264,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "录入MES工具版本",IDC_TOOLVERSION,279,304,80,19
+    GROUPBOX        "用户管理",IDC_STATIC,9,231,181,28
+    LTEXT           "项目",IDC_STATIC,12,282,15,10
+    LTEXT           "订单",IDC_STATIC,12,295,15,10
+    GROUPBOX        "数据库及用户管理",IDC_STATIC,7,111,187,152
+    LTEXT           "服务器",IDC_STATIC,18,129,27,10
+    LTEXT           "数据库",IDC_STATIC,18,142,23,10
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,17,
+                    2,417,108
+    LTEXT           "写号工具",IDC_STATIC,204,149,57,8
+    LTEXT           "Check IMEI S1",IDC_STATIC,204,162,57,8
+    LTEXT           "彩盒包装",IDC_STATIC,204,176,57,8
+    LTEXT           "Check IMEI S2",IDC_STATIC,204,189,57,8
+    LTEXT           "彩盒称重",IDC_STATIC,204,201,57,8
+    LTEXT           "卡通箱包装",IDC_STATIC,204,215,57,8
+    LTEXT           "卡通箱称重",IDC_STATIC,204,227,57,8
+    LTEXT           "栈板包装",IDC_STATIC,204,240,57,8
+    LTEXT           "订单出货信息核对",IDC_STATIC,204,253,57,8
+    GROUPBOX        "数据库管理",IDC_STATIC,10,119,181,110
+    GROUPBOX        "项目订单管理",IDC_STATIC,7,267,187,62
+    LTEXT           "订单创建及释放",IDC_STATIC,204,123,57,8
+    LTEXT           "SQL用户名",IDC_STATIC,19,155,41,10
+    LTEXT           "SQL密码",IDC_STATIC,19,168,36,10
+    LTEXT           "生产数据查询",IDC_STATIC,203,266,57,8
+    LTEXT           "服务器用户名",IDC_STATIC,19,181,45,10
+    LTEXT           "服务器密码",IDC_STATIC,19,194,41,10
+    GROUPBOX        "组装包装工具版本管理",IDC_STATIC,198,110,244,183
+    EDITTEXT        IDC_EDIT_SNSCAN,268,134,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "SN扫描",IDC_STATIC,204,136,57,8
+    EDITTEXT        IDC_EDIT_REWORK,268,277,170,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "返工工具",IDC_STATIC,203,280,57,8
+END
+
+IDD_ADDUSER_DIALOG DIALOG DISCARDABLE  0, 0, 255, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加用户"
+FONT 9, "微软雅黑"
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,52,8,186,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPSW,52,23,186,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRMPSW,52,38,186,14,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PERMISSION,53,54,186,47,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "订单设置管理",IDC_CHECK_CREATEPRODUCT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,81,57,10
+    CONTROL         "写IMEI",IDC_CHECK_WRITEIMEI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,81,38,10
+    CONTROL         "检查机身IMEI",IDC_CHECK_CHECKIMEIS1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,91,58,10
+    CONTROL         "彩盒包装",IDC_CHECK_COLORBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,91,43,10
+    CONTROL         "检查彩盒IMEI",IDC_CHECK_CHECKIMEIS2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,91,58,10
+    CONTROL         "彩盒称重",IDC_CHECK_COLORWEIGH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,101,43,10
+    CONTROL         "卡通箱包装",IDC_CHECK_PACK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,101,50,10
+    CONTROL         "卡通箱称重",IDC_CHECK_CARTONWEIGH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,101,50,10
+    CONTROL         "栈板包装",IDC_CHECK_PALLET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,111,41,10
+    CONTROL         "出货检查",IDC_CHECK_CHECKORDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,111,52,10
+    CONTROL         "生产数据查询",IDC_CHECK_DATAQUERY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,122,58,10
+    CONTROL         "所有工具",IDC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,136,58,10
+    DEFPUSHBUTTON   "确定",IDC_CONFIRM,61,152,50,20
+    PUSHBUTTON      "取消",IDC_CANCEL,143,152,50,20
+    LTEXT           "用户名",IDC_STATIC,21,11,22,8
+    LTEXT           "密码",IDC_STATIC,28,26,15,8
+    LTEXT           "密码确认",IDC_STATIC,15,41,28,8
+    LTEXT           "用户权限",IDC_STATIC,15,56,28,8
+    LTEXT           "所属工具",IDC_STATIC,15,77,28,8
+    CONTROL         "组件投入",IDC_CHECK_SNSCAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,81,43,10
+    GROUPBOX        "组装包装",IDC_STATIC,49,72,200,61
+    CONTROL         "返工管理",IDC_CHECK_REWORK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,111,43,10
+END
+
+IDD_DELETEUSER_DIALOG DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除用户"
+FONT 9, "微软雅黑"
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,52,17,110,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEWPSW,52,38,110,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDC_CONFIRM,31,65,50,21
+    PUSHBUTTON      "取消",IDC_CANCEL,104,65,50,21
+    LTEXT           "用户名",IDC_STATIC,19,19,22,8
+    LTEXT           "密码",IDC_STATIC,19,40,15,8
+END
+
+IDD_CHANGEPASSWORD_DIALOG DIALOG DISCARDABLE  0, 0, 187, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更改密码"
+FONT 9, "微软雅黑"
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,67,15,100,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CURPSW,67,31,100,12,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PSW,67,47,100,12,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CPSW,67,64,100,12,ES_MULTILINE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDC_CONFIRM,34,92,50,22
+    PUSHBUTTON      "取消",IDC_CANCEL,102,92,50,22
+    LTEXT           "用户名",IDC_STATIC,19,17,22,8
+    LTEXT           "当前密码",IDC_STATIC,19,33,28,8
+    LTEXT           "新密码",IDC_STATIC,19,49,22,8
+    LTEXT           "新密码确认",IDC_STATIC,19,66,35,8
+END
+
+IDD_PASSWORD DIALOG DISCARDABLE  0, 0, 147, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限验证"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,49,20,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,49,47,80,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,15,78,50,24
+    PUSHBUTTON      "取消",IDCANCEL,82,78,50,24
+    LTEXT           "用户名",IDC_STATIC,19,22,23,8
+    LTEXT           "密码",IDC_STATIC,19,49,16,8
+END
+
+IDD_ALTERSETTING DIALOG DISCARDABLE  0, 0, 259, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "订单删除"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,145,61,50,23
+    GROUPBOX        "项目订单选择",IDC_STATIC,7,3,246,52
+    LTEXT           "项目",IDC_STATIC,14,18,17,8
+    LTEXT           "订单",IDC_STATIC,14,39,17,8
+    COMBOBOX        IDC_COMBO_PRODUCT,35,16,213,270,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ORDER,35,37,213,559,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "删除订单",IDC_DELETEORDER,63,61,50,23
+END
+
+IDD_LOGIN DIALOG DISCARDABLE  0, 0, 142, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_LOGIN,47,24,86,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,16,51,50,22
+    PUSHBUTTON      "取消",IDCANCEL,79,51,50,22
+    LTEXT           "登录密码",IDC_STATIC,11,27,33,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ProductionManagementTool Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ProductionManagementTool\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ProductionManagementTool.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ProductionManagementTool 应用程序\0"
+            VALUE "ProductVersion", "0, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_PRODUCTIONMANAGEMENTTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 445
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_ADDUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DELETEUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CHANGEPASSWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_ALTERSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\DEWAV.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\IDB_BITMAPSPLASH.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\ZR.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ProductionManagementTool(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ProductionManagementTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
