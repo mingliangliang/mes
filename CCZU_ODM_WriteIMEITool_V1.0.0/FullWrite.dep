@@ -1,0 +1,119 @@
+# Microsoft Developer Studio Generated Dependency File, included by FullWrite.mak
+
+.\config.cpp : \
+	".\config.h"\
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\FullWrite.cpp : \
+	".\android_dl_structure.h"\
+	".\brom.h"\
+	".\config.h"\
+	".\DOWNLOAD.H"\
+	".\external_memory_setting.h"\
+	".\flashtool_handle.h"\
+	".\FullWrite.h"\
+	".\FullWriteDoc.h"\
+	".\FullWriteView.h"\
+	".\IniFile.h"\
+	".\interface.h"\
+	".\LABEL.H"\
+	".\MainFrm.h"\
+	".\meta.h"\
+	".\METAAPP.h"\
+	".\mtk_mcu.h"\
+	".\mtk_resource.h"\
+	".\mtk_status.h"\
+	".\MySpMeta.h"\
+	".\skapi.h"\
+	".\SLA_Challenge.h"\
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\FullWrite.rc : \
+	".\res\FullWrite.ico"\
+	".\res\FullWrite.rc2"\
+	".\res\FullWriteDoc.ico"\
+	".\res\IDB_BITMAPLOGO.bmp"\
+	".\res\IDB_BITMAPSPLASH.bmp"\
+	".\res\Toolbar.bmp"\
+	
+
+.\FullWriteDoc.cpp : \
+	".\FullWrite.h"\
+	".\FullWriteDoc.h"\
+	".\StdAfx.h"\
+	
+
+.\FullWriteView.cpp : \
+	".\android_dl_structure.h"\
+	".\brom.h"\
+	".\config.h"\
+	".\DOWNLOAD.H"\
+	".\external_memory_setting.h"\
+	".\flashtool_handle.h"\
+	".\FullWrite.h"\
+	".\FullWriteDoc.h"\
+	".\FullWriteView.h"\
+	".\IniFile.h"\
+	".\interface.h"\
+	".\LABEL.H"\
+	".\meta.h"\
+	".\METAAPP.h"\
+	".\mtk_mcu.h"\
+	".\mtk_resource.h"\
+	".\mtk_status.h"\
+	".\MySpMeta.h"\
+	".\Password.h"\
+	".\skapi.h"\
+	".\SLA_Challenge.h"\
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\IniFile.cpp : \
+	".\IniFile.h"\
+	".\StdAfx.h"\
+	
+
+.\LABEL.CPP : \
+	".\LABEL.H"\
+	".\StdAfx.h"\
+	
+
+.\MainFrm.cpp : \
+	".\FullWrite.h"\
+	".\MainFrm.h"\
+	".\StdAfx.h"\
+	
+
+.\MySpMeta.cpp : \
+	".\android_dl_structure.h"\
+	".\FullWrite.h"\
+	".\interface.h"\
+	".\MySpMeta.h"\
+	".\spmeta.h"\
+	".\StdAfx.h"\
+	
+
+.\Password.cpp : \
+	".\FullWrite.h"\
+	".\Password.h"\
+	".\StdAfx.h"\
+	
+
+.\skdlluse.cpp : \
+	".\skapi.h"\
+	".\StdAfx.h"\
+	
+
+.\Splash.cpp : \
+	".\Splash.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
