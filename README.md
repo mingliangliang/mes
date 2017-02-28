@@ -1,0 +1,2 @@
+# mes
+Manufacturing Execution System (MES) is a management information service located between the top program management system and the underlying industrial controlled workshop. MES is committed to solving the communication between the upper planning system and the lower control system. Enterprises are able to produce real-time information to optimize the allocation of production capacity, improving manufacturing efficiency and the disposition of resource by setting up their execution system.
