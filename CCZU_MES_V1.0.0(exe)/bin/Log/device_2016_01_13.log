@@ -1,0 +1,108 @@
+[2016-01-13 15:27:06:078] StartDevNtfThread
+[2016-01-13 15:27:06:078] Compare Driver Count: 5
+[2016-01-13 15:27:06:078]    1: USB2Serial
+[2016-01-13 15:27:06:078]    2: ZTE Extension
+[2016-01-13 15:27:06:078]    3: SPRD U2S Diag
+[2016-01-13 15:27:06:078]    4: Spreadtrum Extension
+[2016-01-13 15:27:06:078]    5: U2S(DIAG)
+[2016-01-13 15:27:06:078] EnumProc() is started.
+[2016-01-13 15:27:06:078] Handle = 0x338, MsgID = 0x62B, bThread = 1
+[2016-01-13 15:27:06:078] DevHound is started, ID = 824
+[2016-01-13 15:27:06:078] HoundThreadProc start!
+[2016-01-13 15:27:16:203] DevHound stopped!
+[2016-01-13 15:28:31:546] StartDevNtfThread
+[2016-01-13 15:28:31:546] Compare Driver Count: 5
+[2016-01-13 15:28:31:546]    1: USB2Serial
+[2016-01-13 15:28:31:546]    2: ZTE Extension
+[2016-01-13 15:28:31:546]    3: SPRD U2S Diag
+[2016-01-13 15:28:31:546]    4: Spreadtrum Extension
+[2016-01-13 15:28:31:546]    5: U2S(DIAG)
+[2016-01-13 15:28:31:546] Handle = 0x17F8, MsgID = 0x62B, bThread = 1
+[2016-01-13 15:28:31:546] EnumProc() is started.
+[2016-01-13 15:28:31:546] DevHound is started, ID = 6136
+[2016-01-13 15:28:31:546] HoundThreadProc start!
+[2016-01-13 15:28:59:031] RegDiagEvent()
+[2016-01-13 15:28:59:031] Register Event, [hDiagPhone = 0x6DB0048] Compare (0, Port: 0)
+[2016-01-13 15:28:59:031] DiagPhone found, replaced.
+[2016-01-13 15:29:06:437] SendToUpLayer port = 18 PlugIn
+[2016-01-13 15:29:06:437] [Port: 18] Driver Name: SPRD U2S Diag
+[2016-01-13 15:29:06:437] USB port 18 plugged in.
+[2016-01-13 15:29:06:437] [hDiagPhone = 0x6DB0048] Port = 18, Set PlugIn Event!
+[2016-01-13 15:29:06:875] SendToUpLayer port = 18 Removed
+[2016-01-13 15:29:06:875] USB port 18 removed out.
+[2016-01-13 15:29:06:875] [hDiagPhone = 0x6DB0048] Port = 18, Set Remove Event!
+[2016-01-13 15:29:15:625] SendToUpLayer port = 18 PlugIn
+[2016-01-13 15:29:15:625] [Port: 18] Driver Name: SPRD U2S Diag
+[2016-01-13 15:29:15:625] USB port 18 plugged in.
+[2016-01-13 15:29:15:625] [hDiagPhone = 0x6DB0048] Port = 18, Set PlugIn Event!
+[2016-01-13 15:29:20:765] SendToUpLayer port = 18 Removed
+[2016-01-13 15:29:20:765] USB port 18 removed out.
+[2016-01-13 15:29:20:765] [hDiagPhone = 0x6DB0048] Port = 18, Set Remove Event!
+[2016-01-13 15:29:28:421] DevHound stopped!
+[2016-01-13 15:31:13:359] StartDevNtfThread
+[2016-01-13 15:31:13:359] Compare Driver Count: 5
+[2016-01-13 15:31:13:359]    1: USB2Serial
+[2016-01-13 15:31:13:359]    2: ZTE Extension
+[2016-01-13 15:31:13:359]    3: SPRD U2S Diag
+[2016-01-13 15:31:13:359]    4: Spreadtrum Extension
+[2016-01-13 15:31:13:359]    5: U2S(DIAG)
+[2016-01-13 15:31:13:359] Handle = 0xE38, MsgID = 0x62B, bThread = 1
+[2016-01-13 15:31:13:359] EnumProc() is started.
+[2016-01-13 15:31:13:359] DevHound is started, ID = 3640
+[2016-01-13 15:31:13:359] HoundThreadProc start!
+[2016-01-13 15:31:14:734] DevHound stopped!
+[2016-01-13 15:36:02:906] StartDevNtfThread
+[2016-01-13 15:36:02:906] Compare Driver Count: 5
+[2016-01-13 15:36:02:906]    1: USB2Serial
+[2016-01-13 15:36:02:906]    2: ZTE Extension
+[2016-01-13 15:36:02:906]    3: SPRD U2S Diag
+[2016-01-13 15:36:02:906]    4: Spreadtrum Extension
+[2016-01-13 15:36:02:906]    5: U2S(DIAG)
+[2016-01-13 15:36:02:906] Handle = 0x14F4, MsgID = 0x62B, bThread = 1
+[2016-01-13 15:36:02:906] EnumProc() is started.
+[2016-01-13 15:36:02:906] DevHound is started, ID = 5364
+[2016-01-13 15:36:02:906] HoundThreadProc start!
+[2016-01-13 15:36:23:921] RegDiagEvent()
+[2016-01-13 15:36:23:921] Register Event, [hDiagPhone = 0x7020048] Compare (0, Port: 0)
+[2016-01-13 15:36:23:921] DiagPhone found, replaced.
+[2016-01-13 15:36:32:250] SendToUpLayer port = 18 PlugIn
+[2016-01-13 15:36:32:250] [Port: 18] Driver Name: SPRD U2S Diag
+[2016-01-13 15:36:32:250] USB port 18 plugged in.
+[2016-01-13 15:36:32:250] [hDiagPhone = 0x7020048] Port = 18, Set PlugIn Event!
+[2016-01-13 15:36:32:562] SendToUpLayer port = 18 Removed
+[2016-01-13 15:36:32:562] USB port 18 removed out.
+[2016-01-13 15:36:32:562] [hDiagPhone = 0x7020048] Port = 18, Set Remove Event!
+[2016-01-13 15:36:41:015] SendToUpLayer port = 18 PlugIn
+[2016-01-13 15:36:41:015] [Port: 18] Driver Name: SPRD U2S Diag
+[2016-01-13 15:36:41:015] USB port 18 plugged in.
+[2016-01-13 15:36:41:015] [hDiagPhone = 0x7020048] Port = 18, Set PlugIn Event!
+[2016-01-13 15:36:47:812] SendToUpLayer port = 18 Removed
+[2016-01-13 15:36:47:812] USB port 18 removed out.
+[2016-01-13 15:36:47:812] [hDiagPhone = 0x7020048] Port = 18, Set Remove Event!
+[2016-01-13 15:36:59:859] DevHound stopped!
+[2016-01-13 15:37:14:875] StartDevNtfThread
+[2016-01-13 15:37:14:875] Compare Driver Count: 5
+[2016-01-13 15:37:14:875]    1: USB2Serial
+[2016-01-13 15:37:14:875]    2: ZTE Extension
+[2016-01-13 15:37:14:875]    3: SPRD U2S Diag
+[2016-01-13 15:37:14:875]    4: Spreadtrum Extension
+[2016-01-13 15:37:14:875]    5: U2S(DIAG)
+[2016-01-13 15:37:14:875] Handle = 0x1054, MsgID = 0x62B, bThread = 1
+[2016-01-13 15:37:14:875] EnumProc() is started.
+[2016-01-13 15:37:14:875] DevHound is started, ID = 4180
+[2016-01-13 15:37:14:875] HoundThreadProc start!
+[2016-01-13 15:37:28:765] RegDiagEvent()
+[2016-01-13 15:37:28:765] Register Event, [hDiagPhone = 0x7020048] Compare (0, Port: 0)
+[2016-01-13 15:37:28:765] DiagPhone found, replaced.
+[2016-01-13 15:37:36:062] SendToUpLayer port = 18 PlugIn
+[2016-01-13 15:37:36:062] [Port: 18] Driver Name: SPRD U2S Diag
+[2016-01-13 15:37:36:062] USB port 18 plugged in.
+[2016-01-13 15:37:36:062] [hDiagPhone = 0x7020048] Port = 18, Set PlugIn Event!
+[2016-01-13 15:37:36:406] SendToUpLayer port = 18 Removed
+[2016-01-13 15:37:36:406] USB port 18 removed out.
+[2016-01-13 15:37:36:406] [hDiagPhone = 0x7020048] Port = 18, Set Remove Event!
+[2016-01-13 15:37:44:953] SendToUpLayer port = 18 PlugIn
+[2016-01-13 15:37:44:953] [Port: 18] Driver Name: SPRD U2S Diag
+[2016-01-13 15:37:44:953] USB port 18 plugged in.
+[2016-01-13 15:37:44:953] [hDiagPhone = 0x7020048] Port = 18, Set PlugIn Event!
+[2016-01-13 15:38:12:265] DevHound stopped!
